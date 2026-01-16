@@ -1,0 +1,51 @@
+[
+  {
+    "file": "healing/locatorInterceptor.js",
+    "function": "Page.fill",
+    "oldLocator": "input[name=\"email1\"]",
+    "status": "PENDING",
+    "candidates": []
+  },
+  {
+    "file": "healing/locatorInterceptor.js",
+    "function": "Page.fill",
+    "oldLocator": "input[name=\"email1\"]",
+    "status": "PENDING",
+    "candidates": []
+  },
+  {
+    "file": "healing/locatorInterceptor.js",
+    "function": "Page.fill",
+    "oldLocator": "input[name=\"email1\"]",
+    "status": "PENDING",
+    "candidates": []
+  },
+  {
+    "file": "healing/locatorInterceptor.js",
+    "function": "Page.fill",
+    "oldLocator": "input[name=\"email1\"]",
+    "status": "PENDING",
+    "candidates": []
+  },
+  {
+    "file": "healing/locatorInterceptor.js",
+    "function": "Page.fill",
+    "oldLocator": "input[name=\"email1\"]",
+    "status": "PENDING",
+    "candidates": []
+  },
+  {
+    "file": "healing/locatorInterceptor.js",
+    "function": "Page.waitForSelector",
+    "oldLocator": "#peron-grid h3",
+    "status": "PENDING",
+    "candidates": []
+  },
+  {
+    "file": "healing/locatorInterceptor.js",
+    "function": "Page.waitForSelector",
+    "oldLocator": "#robot-grid h3",
+    "status": "PENDING",
+    "candidates": []
+  }
+]

@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Playwright Test",
+			"type": "shell",
+			"command": "npx playwright test tests/selectservices.spec.js",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

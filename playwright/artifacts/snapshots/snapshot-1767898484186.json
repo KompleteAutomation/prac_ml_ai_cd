@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-01-08T18:54:44.185Z",
+  "test": "SelectCategory",
+  "testFile": "D:\\projects\\GenAI\\prac_SH\\tests\\selectservices.spec.js",
+  "url": "https://aiglobal.space/login.html",
+  "failedLocator": "input[name=\"email1\"]",
+  "error": "page.originalFill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"email1\"]')\u001b[22m\n"
+}
