@@ -4,7 +4,6 @@ pipeline {
     environment {
         BASE_URL = "https://aiglobal.space"
         WORKERS = "1"
-    
     }
 
     options {
@@ -27,7 +26,14 @@ pipeline {
 
         stage('Install Playwright Browsers') {
             steps {
-                bat 'npx playwright install'
+                bat '''
+                IF NOT EXIST "%USERPROFILE%\\AppData\\Local\\ms-playwright" (
+                    echo Installing Playwright browsers...
+                    npx playwright install
+                ) ELSE (
+                    echo Playwright browsers already installed.
+                )
+                '''
             }
         }
 
@@ -36,6 +42,24 @@ pipeline {
                 bat 'npx playwright test --config=playwright.config.js'
             }
         }
+
+        stage('Store Execution Data') {
+            when { always() }
+            steps {
+                bat '''
+                if not exist "%WORKSPACE%\\quality-data" mkdir "%WORKSPACE%\\quality-data"
+                copy "test-results\\playwright-results.json" "%WORKSPACE%\\quality-data\\run_%BUILD_NUMBER%.json"
+                '''
+            }
+        }
+
+        stage('Normalize Execution Data') {
+    when { always() }
+    steps {
+        bat 'node quality-tools\\normalize-playwright\\normalize.js'
+    }
+}
+
     }
 
     post {

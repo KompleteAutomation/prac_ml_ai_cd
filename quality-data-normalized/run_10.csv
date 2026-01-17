@@ -1,0 +1,13 @@
+run_id,test_id,test_title,tags,layer,domain,risk,suite,status,duration_ms,retry_count,error_message,stack_trace_hash
+"10","addEmployee.spec.js::Validate Add Employee","Validate Add Employee","","","","","","failed","11276","0","Error: page.fill: value: expected string, got undefined","24754953462e4d2681b11964f7449510"
+"10","addEmployee.spec.js::Validate Add Employee","Validate Add Employee","","","","","","failed","10924","1","Error: page.fill: value: expected string, got undefined","24754953462e4d2681b11964f7449510"
+"10","addEmployee.spec.js::Validate Add Employee","Validate Add Employee","","","","","","failed","11317","2","Error: page.fill: value: expected string, got undefined","24754953462e4d2681b11964f7449510"
+"10","employee.spec.js::Add Employee","Add Employee","","","","","","passed","11835","0","",""
+"10","login.spec.js::@ui @login @critical @smoke TestService","@ui @login @critical @smoke TestService","","","","","","passed","4569","0","",""
+"10","mockresp.spec.js::Mock API Integration Test","Mock API Integration Test","","","","","","passed","3222","0","",""
+"10","selectservices.spec.js::TestSelectCategory - Cleaning","TestSelectCategory - Cleaning","","","","","","passed","5206","0","",""
+"10","selectservices.spec.js::TestSelectCategory - Cooking","TestSelectCategory - Cooking","","","","","","passed","4664","0","",""
+"10","selectservices.spec.js::TestSelectCategory - BabySitting","TestSelectCategory - BabySitting","","","","","","passed","4580","0","",""
+"10","selectservices.spec.js::TestSelectCategory - Driving","TestSelectCategory - Driving","","","","","","passed","4435","0","",""
+"10","selectservices.spec.js::@ui @services @category @high @regression SelectCategory - Cleaning","@ui @services @category @high @regression SelectCategory - Cleaning","","","","","","passed","4829","0","",""
+"10","test_servicepage.spec.js::Get product list and display count and names","Get product list and display count and names","","","","","","passed","4073","0","",""

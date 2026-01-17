@@ -1,0 +1,1219 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright.config.js",
+    "rootDir": "C:/Users/DELL/.jenkins/workspace/prac_qa_cd/tests",
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "http://localhost:8080/job/prac_qa_cd/9/",
+        "commitHash": "e34e46320535939be07c698f8c457cf895a34ff1",
+        "branch": "origin/master"
+      },
+      "gitCommit": {
+        "shortHash": "e34e463",
+        "hash": "e34e46320535939be07c698f8c457cf895a34ff1",
+        "subject": "updates4",
+        "body": "updates4\n",
+        "author": {
+          "name": "kompleteautomation",
+          "email": "san.backup.emails@gmail.com",
+          "time": 1768634753000
+        },
+        "committer": {
+          "name": "kompleteautomation",
+          "email": "san.backup.emails@gmail.com",
+          "time": 1768634753000
+        },
+        "branch": "HEAD"
+      },
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/DELL/.jenkins/workspace/prac_qa_cd/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "http://localhost:8080/job/prac_qa_cd/9/",
+            "commitHash": "e34e46320535939be07c698f8c457cf895a34ff1",
+            "branch": "origin/master"
+          },
+          "gitCommit": {
+            "shortHash": "e34e463",
+            "hash": "e34e46320535939be07c698f8c457cf895a34ff1",
+            "subject": "updates4",
+            "body": "updates4\n",
+            "author": {
+              "name": "kompleteautomation",
+              "email": "san.backup.emails@gmail.com",
+              "time": 1768634753000
+            },
+            "committer": {
+              "name": "kompleteautomation",
+              "email": "san.backup.emails@gmail.com",
+              "time": 1768634753000
+            },
+            "branch": "HEAD"
+          },
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/DELL/.jenkins/workspace/prac_qa_cd/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "addEmployee.spec.js",
+      "file": "addEmployee.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Validate Add Employee",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 29910,
+                  "error": {
+                    "message": "Error: page.fill: value: expected string, got undefined",
+                    "stack": "Error: page.fill: value: expected string, got undefined\n    at EmployeesPage.addEmployee (C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js:9:21)\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\addEmployee.spec.js:36:25",
+                    "location": {
+                      "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js",
+                      "column": 21,
+                      "line": 9
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\playwright\\pages\\EmployeesPage.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36masync\u001b[39m addEmployee(employeeData) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'#firstName'\u001b[39m\u001b[33m,\u001b[39m employeeData\u001b[33m.\u001b[39mfirstName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'#lastName'\u001b[39m\u001b[33m,\u001b[39m employeeData\u001b[33m.\u001b[39mlastName)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'#email'\u001b[39m\u001b[33m,\u001b[39m employeeData\u001b[33m.\u001b[39memailID)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mselectOption(\u001b[32m'#role'\u001b[39m\u001b[33m,\u001b[39m employeeData\u001b[33m.\u001b[39mrole)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js",
+                        "column": 21,
+                        "line": 9
+                      },
+                      "message": "Error: page.fill: value: expected string, got undefined\n\n   at ..\\playwright\\pages\\EmployeesPage.js:9\n\n   7 |\n   8 |   async addEmployee(employeeData) {\n>  9 |     await this.page.fill('#firstName', employeeData.firstName);\n     |                     ^\n  10 |     await this.page.fill('#lastName', employeeData.lastName);\n  11 |     await this.page.fill('#email', employeeData.emailID);\n  12 |     await this.page.selectOption('#role', employeeData.role);\n    at EmployeesPage.addEmployee (C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js:9:21)\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\addEmployee.spec.js:36:25"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-17T13:26:03.535Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\addEmployee-Validate-Add-Employee-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\addEmployee-Validate-Add-Employee-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\addEmployee-Validate-Add-Employee-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\addEmployee-Validate-Add-Employee-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js",
+                    "column": 21,
+                    "line": 9
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 22097,
+                  "error": {
+                    "message": "Error: page.fill: value: expected string, got undefined",
+                    "stack": "Error: page.fill: value: expected string, got undefined\n    at EmployeesPage.addEmployee (C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js:9:21)\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\addEmployee.spec.js:36:25",
+                    "location": {
+                      "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js",
+                      "column": 21,
+                      "line": 9
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\playwright\\pages\\EmployeesPage.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36masync\u001b[39m addEmployee(employeeData) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'#firstName'\u001b[39m\u001b[33m,\u001b[39m employeeData\u001b[33m.\u001b[39mfirstName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'#lastName'\u001b[39m\u001b[33m,\u001b[39m employeeData\u001b[33m.\u001b[39mlastName)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'#email'\u001b[39m\u001b[33m,\u001b[39m employeeData\u001b[33m.\u001b[39memailID)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mselectOption(\u001b[32m'#role'\u001b[39m\u001b[33m,\u001b[39m employeeData\u001b[33m.\u001b[39mrole)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js",
+                        "column": 21,
+                        "line": 9
+                      },
+                      "message": "Error: page.fill: value: expected string, got undefined\n\n   at ..\\playwright\\pages\\EmployeesPage.js:9\n\n   7 |\n   8 |   async addEmployee(employeeData) {\n>  9 |     await this.page.fill('#firstName', employeeData.firstName);\n     |                     ^\n  10 |     await this.page.fill('#lastName', employeeData.lastName);\n  11 |     await this.page.fill('#email', employeeData.emailID);\n  12 |     await this.page.selectOption('#role', employeeData.role);\n    at EmployeesPage.addEmployee (C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js:9:21)\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\addEmployee.spec.js:36:25"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-01-17T13:26:40.836Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\addEmployee-Validate-Add-Employee-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\addEmployee-Validate-Add-Employee-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\addEmployee-Validate-Add-Employee-chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\addEmployee-Validate-Add-Employee-chromium-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js",
+                    "column": 21,
+                    "line": 9
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 23452,
+                  "error": {
+                    "message": "Error: page.fill: value: expected string, got undefined",
+                    "stack": "Error: page.fill: value: expected string, got undefined\n    at EmployeesPage.addEmployee (C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js:9:21)\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\addEmployee.spec.js:36:25",
+                    "location": {
+                      "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js",
+                      "column": 21,
+                      "line": 9
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\playwright\\pages\\EmployeesPage.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36masync\u001b[39m addEmployee(employeeData) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'#firstName'\u001b[39m\u001b[33m,\u001b[39m employeeData\u001b[33m.\u001b[39mfirstName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'#lastName'\u001b[39m\u001b[33m,\u001b[39m employeeData\u001b[33m.\u001b[39mlastName)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'#email'\u001b[39m\u001b[33m,\u001b[39m employeeData\u001b[33m.\u001b[39memailID)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mselectOption(\u001b[32m'#role'\u001b[39m\u001b[33m,\u001b[39m employeeData\u001b[33m.\u001b[39mrole)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js",
+                        "column": 21,
+                        "line": 9
+                      },
+                      "message": "Error: page.fill: value: expected string, got undefined\n\n   at ..\\playwright\\pages\\EmployeesPage.js:9\n\n   7 |\n   8 |   async addEmployee(employeeData) {\n>  9 |     await this.page.fill('#firstName', employeeData.firstName);\n     |                     ^\n  10 |     await this.page.fill('#lastName', employeeData.lastName);\n  11 |     await this.page.fill('#email', employeeData.emailID);\n  12 |     await this.page.selectOption('#role', employeeData.role);\n    at EmployeesPage.addEmployee (C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js:9:21)\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\addEmployee.spec.js:36:25"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-01-17T13:27:09.952Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\addEmployee-Validate-Add-Employee-chromium-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\addEmployee-Validate-Add-Employee-chromium-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\addEmployee-Validate-Add-Employee-chromium-retry2\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\addEmployee-Validate-Add-Employee-chromium-retry2\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\playwright\\pages\\EmployeesPage.js",
+                    "column": 21,
+                    "line": 9
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "17bcd7972589bd493f85-55fa7283c451b5dc6dd7",
+          "file": "addEmployee.spec.js",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "employee.spec.js",
+      "file": "employee.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Add Employee",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 29276,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-17T13:26:03.824Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\employee-Add-Employee-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62293714aff8beb1273d-c07225fcad0fd64ca68c",
+          "file": "employee.spec.js",
+          "line": 13,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "login.spec.js",
+      "file": "login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@ui @login @critical @smoke TestService",
+          "ok": true,
+          "tags": [
+            "ui",
+            "login",
+            "critical",
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6580,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-17T13:26:38.338Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\login--ui-login-critical-smoke-TestService-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-8db209b47092b8b3ac0f",
+          "file": "login.spec.js",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "mockresp.spec.js",
+      "file": "mockresp.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Mock API Integration Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9086,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{ permission: [ \u001b[32m'all'\u001b[39m ], message: \u001b[32m'Hello Admin!'\u001b[39m, name: \u001b[32m'Admin'\u001b[39m }\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-17T13:26:45.205Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\mockresp-Mock-API-Integration-Test-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "87e05f5dcdf2d82d692e-8fa2eca0bb2f21fc371c",
+          "file": "mockresp.spec.js",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "selectservices.spec.js",
+      "file": "selectservices.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Service Category Tests",
+          "file": "selectservices.spec.js",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TestSelectCategory - Cleaning",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12607,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Products for Cleaning: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Displayed Products: [ \u001b[32m'RoboClean Pro'\u001b[39m, \u001b[32m'DustMaster 360'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "Expected Products: [ \u001b[32m'RoboClean Pro'\u001b[39m, \u001b[32m'DustMaster 360'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-17T13:26:54.971Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-08051-stSelectCategory---Cleaning-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "027dd68287a42eb37920-a10e6a9d61f89a0e72b9",
+              "file": "selectservices.spec.js",
+              "line": 20,
+              "column": 11
+            },
+            {
+              "title": "TestSelectCategory - Cooking",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 5365,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:31:71",
+                        "location": {
+                          "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                          "column": 71,
+                          "line": 31
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 29 |\u001b[39m         \u001b[36mconst\u001b[39m productNames \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mgetProductNames()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m`Products for ${service}:`\u001b[39m\u001b[33m,\u001b[39m productNames)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m         expect(\u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mvalidateProducts(expectedProducts))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogout()\u001b[33m;\u001b[39m\n \u001b[90m 34 |\u001b[39m         expect(\u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mvalidateLogoutSuccess())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                            "column": 71,
+                            "line": 31
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  29 |         const productNames = await servicesPage.getProductNames();\n  30 |         console.log(`Products for ${service}:`, productNames);\n> 31 |         expect(await servicesPage.validateProducts(expectedProducts)).toBeTruthy();\n     |                                                                       ^\n  32 |\n  33 |         await loginPage.logout();\n  34 |         expect(await loginPage.validateLogoutSuccess()).toBeTruthy();\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:31:71"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Products for Cooking: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Displayed Products: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Expected Products: [ \u001b[32m'ChefBot Ultra'\u001b[39m, \u001b[32m'KitchenRobo Plus'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-17T13:27:07.948Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-a76a3-estSelectCategory---Cooking-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-a76a3-estSelectCategory---Cooking-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-a76a3-estSelectCategory---Cooking-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-a76a3-estSelectCategory---Cooking-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                        "column": 71,
+                        "line": 31
+                      }
+                    },
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 27619,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Products for Cooking: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Displayed Products: [ \u001b[32m'ChefBot Ultra'\u001b[39m, \u001b[32m'KitchenRobo Plus'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "Expected Products: [ \u001b[32m'ChefBot Ultra'\u001b[39m, \u001b[32m'KitchenRobo Plus'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-01-17T13:27:18.782Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-a76a3-estSelectCategory---Cooking-chromium-retry1\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "027dd68287a42eb37920-de1bb553c50ee61b9409",
+              "file": "selectservices.spec.js",
+              "line": 20,
+              "column": 11
+            },
+            {
+              "title": "TestSelectCategory - BabySitting",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 20338,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Products for BabySitting: [ \u001b[32m'NannyBot Sitter'\u001b[39m, \u001b[32m'ChildCare Robo'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "Displayed Products: [ \u001b[32m'NannyBot Sitter'\u001b[39m, \u001b[32m'ChildCare Robo'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "Expected Products: [ \u001b[32m'NannyBot Sitter'\u001b[39m, \u001b[32m'ChildCare Robo'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-17T13:27:40.885Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-65606-electCategory---BabySitting-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "027dd68287a42eb37920-6ebc4bdf3da450ce3bf7",
+              "file": "selectservices.spec.js",
+              "line": 20,
+              "column": 11
+            },
+            {
+              "title": "TestSelectCategory - Driving",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 12440,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:31:71",
+                        "location": {
+                          "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                          "column": 71,
+                          "line": 31
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 29 |\u001b[39m         \u001b[36mconst\u001b[39m productNames \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mgetProductNames()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m`Products for ${service}:`\u001b[39m\u001b[33m,\u001b[39m productNames)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m         expect(\u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mvalidateProducts(expectedProducts))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogout()\u001b[33m;\u001b[39m\n \u001b[90m 34 |\u001b[39m         expect(\u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mvalidateLogoutSuccess())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                            "column": 71,
+                            "line": 31
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  29 |         const productNames = await servicesPage.getProductNames();\n  30 |         console.log(`Products for ${service}:`, productNames);\n> 31 |         expect(await servicesPage.validateProducts(expectedProducts)).toBeTruthy();\n     |                                                                       ^\n  32 |\n  33 |         await loginPage.logout();\n  34 |         expect(await loginPage.validateLogoutSuccess()).toBeTruthy();\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:31:71"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Products for Driving: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Displayed Products: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Expected Products: [ \u001b[32m'AutoDriver X'\u001b[39m, \u001b[32m'RoboChauffeur Lite'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-17T13:27:55.698Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-208f7-estSelectCategory---Driving-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-208f7-estSelectCategory---Driving-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-208f7-estSelectCategory---Driving-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-208f7-estSelectCategory---Driving-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                        "column": 71,
+                        "line": 31
+                      }
+                    },
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 26017,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:31:71",
+                        "location": {
+                          "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                          "column": 71,
+                          "line": 31
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 29 |\u001b[39m         \u001b[36mconst\u001b[39m productNames \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mgetProductNames()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m`Products for ${service}:`\u001b[39m\u001b[33m,\u001b[39m productNames)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m         expect(\u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mvalidateProducts(expectedProducts))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogout()\u001b[33m;\u001b[39m\n \u001b[90m 34 |\u001b[39m         expect(\u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mvalidateLogoutSuccess())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                            "column": 71,
+                            "line": 31
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  29 |         const productNames = await servicesPage.getProductNames();\n  30 |         console.log(`Products for ${service}:`, productNames);\n> 31 |         expect(await servicesPage.validateProducts(expectedProducts)).toBeTruthy();\n     |                                                                       ^\n  32 |\n  33 |         await loginPage.logout();\n  34 |         expect(await loginPage.validateLogoutSuccess()).toBeTruthy();\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:31:71"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Products for Driving: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Displayed Products: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Expected Products: [ \u001b[32m'AutoDriver X'\u001b[39m, \u001b[32m'RoboChauffeur Lite'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-01-17T13:28:11.668Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-208f7-estSelectCategory---Driving-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-208f7-estSelectCategory---Driving-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-208f7-estSelectCategory---Driving-chromium-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-208f7-estSelectCategory---Driving-chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                        "column": 71,
+                        "line": 31
+                      }
+                    },
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 19490,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:31:71",
+                        "location": {
+                          "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                          "column": 71,
+                          "line": 31
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 29 |\u001b[39m         \u001b[36mconst\u001b[39m productNames \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mgetProductNames()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m`Products for ${service}:`\u001b[39m\u001b[33m,\u001b[39m productNames)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m         expect(\u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mvalidateProducts(expectedProducts))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogout()\u001b[33m;\u001b[39m\n \u001b[90m 34 |\u001b[39m         expect(\u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mvalidateLogoutSuccess())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                            "column": 71,
+                            "line": 31
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  29 |         const productNames = await servicesPage.getProductNames();\n  30 |         console.log(`Products for ${service}:`, productNames);\n> 31 |         expect(await servicesPage.validateProducts(expectedProducts)).toBeTruthy();\n     |                                                                       ^\n  32 |\n  33 |         await loginPage.logout();\n  34 |         expect(await loginPage.validateLogoutSuccess()).toBeTruthy();\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:31:71"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Products for Driving: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Displayed Products: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Expected Products: [ \u001b[32m'AutoDriver X'\u001b[39m, \u001b[32m'RoboChauffeur Lite'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-01-17T13:28:44.985Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-208f7-estSelectCategory---Driving-chromium-retry2\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-208f7-estSelectCategory---Driving-chromium-retry2\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-208f7-estSelectCategory---Driving-chromium-retry2\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-208f7-estSelectCategory---Driving-chromium-retry2\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                        "column": 71,
+                        "line": 31
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "027dd68287a42eb37920-b1c3024a64e77598af8f",
+              "file": "selectservices.spec.js",
+              "line": 20,
+              "column": 11
+            },
+            {
+              "title": "@ui @services @category @high @regression SelectCategory - Cleaning",
+              "ok": false,
+              "tags": [
+                "ui",
+                "services",
+                "category",
+                "high",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5143,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:51:69",
+                        "location": {
+                          "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                          "column": 69,
+                          "line": 51
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 49 |\u001b[39m       \u001b[36mconst\u001b[39m productNames \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mgetProductNames()\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m'Products:'\u001b[39m\u001b[33m,\u001b[39m productNames)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m       expect(\u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mvalidateProducts(expectedProducts))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m\n \u001b[90m 53 |\u001b[39m       \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogout()\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m       expect(\u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mvalidateLogoutSuccess())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                            "column": 69,
+                            "line": 51
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  49 |       const productNames = await servicesPage.getProductNames();\n  50 |       console.log('Products:', productNames);\n> 51 |       expect(await servicesPage.validateProducts(expectedProducts)).toBeTruthy();\n     |                                                                     ^\n  52 |\n  53 |       await loginPage.logout();\n  54 |       expect(await loginPage.validateLogoutSuccess()).toBeTruthy();\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:51:69"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Products: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Displayed Products: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Expected Products: [ \u001b[32m'RoboClean Pro'\u001b[39m, \u001b[32m'DustMaster 360'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-17T13:28:09.475Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-d27bd-n-SelectCategory---Cleaning-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-d27bd-n-SelectCategory---Cleaning-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-d27bd-n-SelectCategory---Cleaning-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-d27bd-n-SelectCategory---Cleaning-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                        "column": 69,
+                        "line": 51
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 21396,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:51:69",
+                        "location": {
+                          "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                          "column": 69,
+                          "line": 51
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 49 |\u001b[39m       \u001b[36mconst\u001b[39m productNames \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mgetProductNames()\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m'Products:'\u001b[39m\u001b[33m,\u001b[39m productNames)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m       expect(\u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mvalidateProducts(expectedProducts))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m\n \u001b[90m 53 |\u001b[39m       \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogout()\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m       expect(\u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mvalidateLogoutSuccess())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                            "column": 69,
+                            "line": 51
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  49 |       const productNames = await servicesPage.getProductNames();\n  50 |       console.log('Products:', productNames);\n> 51 |       expect(await servicesPage.validateProducts(expectedProducts)).toBeTruthy();\n     |                                                                     ^\n  52 |\n  53 |       await loginPage.logout();\n  54 |       expect(await loginPage.validateLogoutSuccess()).toBeTruthy();\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:51:69"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Products: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Displayed Products: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Expected Products: [ \u001b[32m'RoboClean Pro'\u001b[39m, \u001b[32m'DustMaster 360'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-01-17T13:28:19.556Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-d27bd-n-SelectCategory---Cleaning-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-d27bd-n-SelectCategory---Cleaning-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-d27bd-n-SelectCategory---Cleaning-chromium-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-d27bd-n-SelectCategory---Cleaning-chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                        "column": 69,
+                        "line": 51
+                      }
+                    },
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 24933,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:51:69",
+                        "location": {
+                          "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                          "column": 69,
+                          "line": 51
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 49 |\u001b[39m       \u001b[36mconst\u001b[39m productNames \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mgetProductNames()\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m'Products:'\u001b[39m\u001b[33m,\u001b[39m productNames)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m       expect(\u001b[36mawait\u001b[39m servicesPage\u001b[33m.\u001b[39mvalidateProducts(expectedProducts))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m\n \u001b[90m 53 |\u001b[39m       \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogout()\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m       expect(\u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mvalidateLogoutSuccess())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                            "column": 69,
+                            "line": 51
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  49 |       const productNames = await servicesPage.getProductNames();\n  50 |       console.log('Products:', productNames);\n> 51 |       expect(await servicesPage.validateProducts(expectedProducts)).toBeTruthy();\n     |                                                                     ^\n  52 |\n  53 |       await loginPage.logout();\n  54 |       expect(await loginPage.validateLogoutSuccess()).toBeTruthy();\n    at C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js:51:69"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Products: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Displayed Products: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "Expected Products: [ \u001b[32m'RoboClean Pro'\u001b[39m, \u001b[32m'DustMaster 360'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2026-01-17T13:28:51.259Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-d27bd-n-SelectCategory---Cleaning-chromium-retry2\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-d27bd-n-SelectCategory---Cleaning-chromium-retry2\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-d27bd-n-SelectCategory---Cleaning-chromium-retry2\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\selectservices-Service-Cat-d27bd-n-SelectCategory---Cleaning-chromium-retry2\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\tests\\selectservices.spec.js",
+                        "column": 69,
+                        "line": 51
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "027dd68287a42eb37920-4cee989ed29f031f50c4",
+              "file": "selectservices.spec.js",
+              "line": 39,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "test_servicepage.spec.js",
+      "file": "test_servicepage.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Get product list and display count and names",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 14605,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Product Count: 8\n"
+                    },
+                    {
+                      "text": "Product Names: [\n  \u001b[32m'RoboClean Pro'\u001b[39m,\n  \u001b[32m'DustMaster 360'\u001b[39m,\n  \u001b[32m'ChefBot Ultra'\u001b[39m,\n  \u001b[32m'KitchenRobo Plus'\u001b[39m,\n  \u001b[32m'NannyBot Sitter'\u001b[39m,\n  \u001b[32m'ChildCare Robo'\u001b[39m,\n  \u001b[32m'AutoDriver X'\u001b[39m,\n  \u001b[32m'RoboChauffeur Lite'\u001b[39m\n]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-17T13:29:18.320Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\DELL\\.jenkins\\workspace\\prac_qa_cd\\test-results\\test_servicepage-Get-produ-efba1-and-display-count-and-names-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5726151f7f7203290b07-2bc4e5241a086904e8ad",
+          "file": "test_servicepage.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-17T13:26:00.782Z",
+    "duration": 222038.391,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 1
+  }
+}
