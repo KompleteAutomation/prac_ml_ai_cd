@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        BASE_URL = "https://aiglobal.space",
+        BASE_URL = "https://aiglobal.space"
         WORKERS = "4"
     
     }
