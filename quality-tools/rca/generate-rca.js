@@ -44,7 +44,14 @@ Respond in JSON:
     temperature: 0.2
   });
 
-  return JSON.parse(response.choices[0].message.content);
+//   return JSON.parse(response.choices[0].message.content);
+  let raw = response.choices[0].message.content.trim();
+
+// Remove markdown code fences if present
+    raw = raw.replace(/```json/g, '').replace(/```/g, '').trim();
+
+    return JSON.parse(raw);
+
 }
 
 async function main() {
