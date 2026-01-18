@@ -71,6 +71,12 @@ pipeline {
                 bat 'node quality-tools\\clustering\\build-failure-clusters.js'
             }
         }
+
+        stage('Generate RCA Summaries') {
+            steps {
+                bat 'node quality-tools\\rca-summaries\\generate-rca-summaries.js'
+            }
+        }   
     }
 
     post {
