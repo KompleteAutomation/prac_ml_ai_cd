@@ -4,6 +4,7 @@ pipeline {
     environment {
         BASE_URL = "https://aiglobal.space"
         WORKERS = "1"
+        OPENAI_API_KEY  = credentials('OPENAI_API_KEY')
     }
 
     options {
@@ -74,8 +75,7 @@ pipeline {
 
         stage('Generate RCA Summaries') {
             steps {
-                bat 'node quality-tools\\rca-summaries\\generate-rca-summaries.js'
-            }
+                    bat 'node quality-tools\\rca\\generate-rca.js'            }
         }   
     }
 
@@ -85,6 +85,7 @@ pipeline {
             archiveArtifacts artifacts: 'playwright-report/**', fingerprint: true
             archiveArtifacts artifacts: 'quality-dashboard/**', fingerprint: true
             archiveArtifacts artifacts: 'quality-data-clusters/**', fingerprint: true
+            archiveArtifacts artifacts: 'quality-data-rca/**', fingerprint: true
 
         }
 
