@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         BASE_URL = 'https://aiglobal.space'
-        WORKERS = '3'
+        WORKERS = '2'
         OPENAI_API_KEY = credentials('OPENAI_API_KEY')
         SETUP_MODE = 'api'
     }
