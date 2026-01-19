@@ -11,7 +11,6 @@ pipeline {
     options { timestamps() }
 
     stages {
-
         stage('Checkout') {
             steps { checkout scm }
         }
@@ -37,13 +36,18 @@ pipeline {
             steps {
                 script {
                     try {
-                        bat 'npx playwright test --config=playwright.config.js --workers=%WORKERS% --project=chromium $(type quality-ml-results\\prioritized-tests.txt)'
-
+                        bat '''
+                echo Running ML-prioritized tests...
+                for /f %%t in (quality-ml-results\\prioritized-tests.txt) do (
+                    echo Executing %%t
+                    npx playwright test %%t --config=playwright.config.js --workers=%WORKERS%
+                )
+                '''
                     }
-                    catch (err) {
-                        echo '❌ Playwright tests failed — marking build UNSTABLE but continuing'
+            catch (err) {
+                        echo '❌ Playwright tests failed — marking build UNSTABLE but continuing for reporting'
                         currentBuild.result = 'UNSTABLE'
-                    }
+            }
                 }
             }
         }
