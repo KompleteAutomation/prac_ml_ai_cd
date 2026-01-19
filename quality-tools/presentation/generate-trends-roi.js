@@ -7,6 +7,12 @@ const CLUSTER_FILE = path.resolve(WORKSPACE, 'quality-data-clusters', 'clusters.
 const OUT_DIR = path.resolve(WORKSPACE, 'quality-presentation');
 const OUT_FILE = path.join(OUT_DIR, 'trends-roi.html');
 
+if (!fs.existsSync(NORMALIZED_DIR)) {
+  console.log("No normalized data found — skipping trends generation");
+  return;
+}
+
+
 if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
 
 function readCSV(filePath) {
