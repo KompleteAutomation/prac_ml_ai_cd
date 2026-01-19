@@ -70,10 +70,10 @@ let csv = 'TestName,PassRate,FlakyRate,AvgDuration,LastOutcome,FailureClusterCou
 
 Object.keys(testStats).forEach(testName => {
   const t = testStats[testName];
-  const passRate = (t.passed / t.total).toFixed(2);
-  const flakyRate = (t.flaky / t.total).toFixed(2);
-  const avgDuration = Math.round(t.durations.reduce((a,b)=>a+b,0) / t.durations.length);
-  const lastOutcome = t.lastOutcome;
+  const passRate = t.total > 0 ? (t.passed / t.total).toFixed(2) : '0.00';
+  const flakyRate = t.total > 0 ? (t.flaky / t.total).toFixed(2) : '0.00';
+  const avgDuration = t.durations.length > 0 ? Math.round(t.durations.reduce((a, b) => a + b, 0) / t.durations.length) : 'NaN';
+  const lastOutcome = t.lastOutcome || 'unknown';
   const clusterCount = clusterMap[testName] || 0;
   const changedHit = changedFiles.some(f => f.includes(testName)) ? 'YES' : 'NO';
 
