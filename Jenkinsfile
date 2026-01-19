@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        BASE_URL = "https://aiglobal.space"
-        WORKERS = "1"
+        BASE_URL = 'https://aiglobal.space'
+        WORKERS = '1'
         OPENAI_API_KEY  = credentials('OPENAI_API_KEY')
     }
 
@@ -12,7 +12,6 @@ pipeline {
     }
 
     stages {
-
         stage('Checkout') {
             steps {
                 checkout scm
@@ -66,8 +65,7 @@ pipeline {
             }
         }
 
-
-         stage('Build Failure Clusters') {
+        stage('Build Failure Clusters') {
             steps {
                 bat 'node quality-tools\\clustering\\build-failure-clusters.js'
             }
@@ -76,14 +74,19 @@ pipeline {
         stage('Generate RCA Summaries') {
             steps {
                     bat 'node quality-tools\\rca\\generate-rca.js'            }
-        }  
+        }
 
         stage('Generate Executive Summary') {
-    steps {
-        bat 'node quality-tools\\presentation\\generate-executive-summary.js'
-    }
-}
- 
+            steps {
+                bat 'node quality-tools\\presentation\\generate-executive-summary.js'
+            }
+
+            stage('Generate RCA Dashboard') {
+                steps {
+                    bat 'node quality-tools\\presentation\\generate-rca-dashboard.js'
+                }
+            }
+        }
     }
 
     post {
@@ -94,7 +97,6 @@ pipeline {
             archiveArtifacts artifacts: 'quality-data-clusters/**', fingerprint: true
             archiveArtifacts artifacts: 'quality-data-rca/**', fingerprint: true
             archiveArtifacts artifacts: 'quality-presentation/**', fingerprint: true
-
         }
 
         failure {
