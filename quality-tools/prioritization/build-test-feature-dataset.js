@@ -13,9 +13,12 @@ if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR);
 let clusterMap = {};
 if (fs.existsSync(CLUSTER_FILE)) {
   const clusters = JSON.parse(fs.readFileSync(CLUSTER_FILE));
+
   clusters.forEach(c => {
-    c.tests.forEach(t => {
-      clusterMap[t] = (clusterMap[t] || 0) + 1;
+    if (!c.failures) return;
+    c.failures.forEach(f => {
+      const testName = f.testName;
+      clusterMap[testName] = (clusterMap[testName] || 0) + 1;
     });
   });
 }
@@ -36,6 +39,7 @@ let testStats = {};
 
 files.forEach(file => {
   const data = fs.readFileSync(path.join(NORMALIZED_DIR, file), 'utf-8').split('\n').slice(1);
+
   data.forEach(row => {
     if (!row.trim()) return;
     const [testName, status, duration] = row.split(',');
@@ -72,7 +76,6 @@ Object.keys(testStats).forEach(test => {
   const lastOutcome = t.lastOutcome;
   const clusterCount = clusterMap[test] || 0;
 
-  // Simple change mapping: if test file name matches changed file name
   const changedHit = changedFiles.some(f => f.includes(test)) ? 'YES' : 'NO';
 
   csv += `${test},${passRate},${flakyRate},${avgDuration},${lastOutcome},${clusterCount},${changedHit}\n`;
