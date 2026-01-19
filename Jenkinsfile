@@ -65,6 +65,21 @@ pipeline {
             }
         }
 
+        stage('Load Historical Execution Data') {
+            steps {
+                bat '''
+        echo Loading historical execution data...
+        if not exist "%WORKSPACE%\\quality-data" mkdir "%WORKSPACE%\\quality-data"
+
+        for /d %%G in ("C:\\Users\\DELL\\.jenkins\\jobs\\prac_qa_cd\\builds\\*") do (
+            if exist "%%G\\archive\\quality-data\\run_*.json" (
+                copy "%%G\\archive\\quality-data\\run_*.json" "%WORKSPACE%\\quality-data\\" >nul
+            )
+        )
+        '''
+            }
+        }
+
         stage('Generate Quality Dashboard') {
             steps {
                 bat 'node quality-tools\\dashboard\\generate-dashboard.js'
