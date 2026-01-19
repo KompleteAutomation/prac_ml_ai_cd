@@ -39,8 +39,14 @@ pipeline {
 
         stage('Run Playwright Tests') {
             steps {
-                // Allow pipeline to continue even if tests fail
-                bat 'npx playwright test --config=playwright.config.js || exit 0'
+                script {
+                    try {
+                        bat 'npx playwright test --config=playwright.config.js'
+            } catch (err) {
+                        echo '❌ Playwright tests failed — continuing pipeline for reporting'
+                        currentBuild.result = 'UNSTABLE'
+                    }
+                }
             }
         }
 
