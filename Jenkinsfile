@@ -76,7 +76,14 @@ pipeline {
         stage('Generate RCA Summaries') {
             steps {
                     bat 'node quality-tools\\rca\\generate-rca.js'            }
-        }   
+        }  
+
+        stage('Generate Executive Summary') {
+    steps {
+        bat 'node quality-tools\\presentation\\generate-executive-summary.js'
+    }
+}
+ 
     }
 
     post {
@@ -86,6 +93,7 @@ pipeline {
             archiveArtifacts artifacts: 'quality-dashboard/**', fingerprint: true
             archiveArtifacts artifacts: 'quality-data-clusters/**', fingerprint: true
             archiveArtifacts artifacts: 'quality-data-rca/**', fingerprint: true
+            archiveArtifacts artifacts: 'quality-presentation/**', fingerprint: true
 
         }
 
