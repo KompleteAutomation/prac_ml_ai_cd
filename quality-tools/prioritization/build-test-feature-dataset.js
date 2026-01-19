@@ -56,7 +56,11 @@ files.forEach(file => {
     }
 
     testStats[testName].total++;
-    testStats[testName].durations.push(Number(duration));
+
+    if (!isNaN(Number(duration))) {
+      testStats[testName].durations.push(Number(duration)); // Only add valid numeric durations
+    }
+
     testStats[testName].lastOutcome = status;
 
     if (status === 'passed') testStats[testName].passed++;
@@ -72,7 +76,7 @@ Object.keys(testStats).forEach(testName => {
   const t = testStats[testName];
   const passRate = t.total > 0 ? (t.passed / t.total).toFixed(2) : '0.00';
   const flakyRate = t.total > 0 ? (t.flaky / t.total).toFixed(2) : '0.00';
-  const avgDuration = t.durations.length > 0 ? Math.round(t.durations.reduce((a, b) => a + b, 0) / t.durations.length) : 'NaN';
+  const avgDuration = t.durations.length > 0 ? Math.round(t.durations.reduce((a, b) => a + b, 0) / t.durations.length) : '0'; // Default to 0 if durations array is empty
   const lastOutcome = t.lastOutcome || 'unknown';
   const clusterCount = clusterMap[testName] || 0;
   const changedHit = changedFiles.some(f => f.includes(testName)) ? 'YES' : 'NO';

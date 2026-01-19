@@ -1,0 +1,10 @@
+TestName,PassRate,FlakyRate,AvgDuration,LastOutcome,FailureClusterCount,ChangedModuleHit
+"1",0.00,0.00,0,"test_servicepage.spec.js::Get product list and display count and names",0,NO
+"10",0.00,0.00,0,"test_servicepage.spec.js::Get product list and display count and names",0,NO
+"11",0.00,0.00,0,"test_servicepage.spec.js::Get product list and display count and names",0,NO
+"3",0.00,0.00,0,"test_servicepage.spec.js::Get product list and display count and names",0,NO
+"5",0.00,0.00,0,"test_servicepage.spec.js::Get product list and display count and names",0,NO
+"6",0.00,0.00,0,"test_servicepage.spec.js::Get product list and display count and names",0,NO
+"7",0.00,0.00,0,"test_servicepage.spec.js::Get product list and display count and names",0,NO
+"8",0.00,0.00,0,"test_servicepage.spec.js::Get product list and display count and names",0,NO
+"9",0.00,0.00,0,"test_servicepage.spec.js::Get product list and display count and names",0,NO
