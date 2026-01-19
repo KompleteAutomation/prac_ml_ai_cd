@@ -6,7 +6,7 @@ pipeline {
         WORKERS = '1'
         OPENAI_API_KEY = credentials('OPENAI_API_KEY')
         SETUP_MODE = 'api'
-    
+    }
 
     options {
         timestamps()
@@ -82,15 +82,16 @@ pipeline {
         stage('Load Historical Execution Data') {
             steps {
                 bat '''
-        echo Loading historical execution data...
-        if not exist "%WORKSPACE%\\quality-data" mkdir "%WORKSPACE%\\quality-data"
+                echo Loading historical execution data...
+                if not exist "%WORKSPACE%\\quality-data" mkdir "%WORKSPACE%\\quality-data"
 
-        for /f %%G in ('dir /b /ad "C:\\Users\\DELL\\.jenkins\\jobs\\prac_qa_cd\\builds"') do (
-            if exist "C:\\Users\\DELL\\.jenkins\\jobs\\prac_qa_cd\\builds\\%%G\\archive\\quality-data\\run_*.json" (
-                copy "C:\\Users\\DELL\\.jenkins\\jobs\\prac_qa_cd\\builds\\%%G\\archive\\quality-data\\run_*.json" "%WORKSPACE%\\quality-data\\" >nul
-            )
-        )
-        '''
+                for /f %%G in ('dir /b /ad "C:\\Users\\DELL\\.jenkins\\jobs\\prac_qa_cd\\builds"') do (
+                    if exist "C:\\Users\\DELL\\.jenkins\\jobs\\prac_qa_cd\\builds\\%%G\\archive\\quality-data\\run_*.json" (
+                        copy "C:\\Users\\DELL\\.jenkins\\jobs\\prac_qa_cd\\builds\\%%G\\archive\\quality-data\\run_*.json" \
+                             "%WORKSPACE%\\quality-data\\" >nul
+                    )
+                )
+                '''
             }
         }
 
