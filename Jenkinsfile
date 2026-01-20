@@ -5,10 +5,10 @@ pipeline {
         BASE_URL = 'https://aiglobal.space'
         WORKERS = '1'
         SETUP_MODE = 'api'
-        EXECUTION_CSV = 'ml_analysis/execution_results/execution_records_500_runs.csv'
-        REPORT_NAME = "report_${BUILD_NUMBER}"
+        EXECUTION_CSV = 'ml_analysis\\execution_results\\execution_records_500_runs.csv'
+        REPORT_NAME = 'report_%BUILD_NUMBER%'
 
-        // Pull OpenAI key from Jenkins Credentials
+        // OpenAI key from Jenkins Credentials
         OPENAI_API_KEY = credentials('OPENAI_API_KEY')
     }
 
@@ -21,26 +21,26 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                echo 'Installing Node dependencies...'
+                bat 'npm install'
             }
         }
 
         stage('Run AI Test Intelligence Pipeline') {
             steps {
-                echo 'Running DataReader → Validator → FailureAnalyzer → Priority → Reports'
+                echo 'Running DataReader → Validator → FailureAnalyzer → Reports'
 
-                sh """
-                   export OPENAI_API_KEY=${OPENAI_API_KEY}
-                   node ml_analysis/lib/testCasePrioritization.js \
-                   ${EXECUTION_CSV} ${REPORT_NAME}
-                """
+                bat '''
+                set OPENAI_API_KEY=%OPENAI_API_KEY%
+                node ml_analysis\\lib\\testCasePrioritization.js %EXECUTION_CSV% %REPORT_NAME%
+                '''
             }
         }
 
         stage('Publish Reports') {
             steps {
                 echo 'Publishing reports...'
-                archiveArtifacts artifacts: 'ml_analysis/reports/**/*.*', fingerprint: true
+                archiveArtifacts artifacts: 'ml_analysis\\reports\\**\\*.*', fingerprint: true
             }
         }
     }
@@ -50,12 +50,8 @@ pipeline {
             echo '✅ AI-driven QA Intelligence Pipeline completed successfully'
         }
 
-        unstable {
-            echo '🟠 Pipeline completed but some tests failed — Reports and RCA generated'
-        }
-
         failure {
-            echo '🔴 Pipeline infrastructure failure — Check logs'
+            echo '🔴 Pipeline failed — check console logs'
         }
     }
 }
