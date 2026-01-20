@@ -40,7 +40,8 @@ pipeline {
         stage('Publish Reports') {
             steps {
                 echo 'Publishing reports...'
-                archiveArtifacts artifacts: 'ml_analysis\\reports\\**\\*.*', fingerprint: true
+                archiveArtifacts artifacts: 'ml_analysis/reports/**/*.*', fingerprint: true
+
             }
         }
     }
@@ -48,6 +49,7 @@ pipeline {
     post {
         success {
             echo '✅ AI-driven QA Intelligence Pipeline completed successfully'
+             echo "📊 Stakeholder Report: ${BUILD_URL}artifact/ml_analysis/reports/stakeholder_report_report_${BUILD_NUMBER}.html"
         }
 
         failure {
