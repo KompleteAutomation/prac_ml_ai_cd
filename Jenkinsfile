@@ -38,7 +38,7 @@ pipeline {
         stage('Publish Reports') {
             steps {
                 echo 'Publishing reports...'
-                archiveArtifacts artifacts: 'ml_analysis/reports/**/*.*', fingerprint: true
+                archiveArtifacts artifacts: 'ml_analysis/Reports/**/*.*', fingerprint: true
             }
         }
     }
