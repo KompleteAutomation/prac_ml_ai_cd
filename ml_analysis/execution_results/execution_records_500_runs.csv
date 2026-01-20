@@ -1,0 +1,501 @@
+TestCaseID,BuildID,ExecutionTime,Environment,Browser,Module,FailedStep,ErrorMessage,StackTraceSnippet,Locator,APIResponse,Duration(ms),RetryCount,Status
+TC_ADD_EMP_049,B1035,1/20/2026 9:00,QA,Chrome,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6453,0,PASS
+TC_ADD_EMP_049,B1031,1/20/2026 9:02,Staging,Firefox,Employee,Save Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46664,1,FAIL
+TC_VIEW_EMP_040,B1012,1/20/2026 9:04,UAT,Firefox,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6448,0,PASS
+TC_DELETE_EMP_006,B1024,1/20/2026 9:06,QA,Firefox,Employee,Delete Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19312,1,FAIL
+TC_ADD_CART_031,B1021,1/20/2026 9:08,Staging,Edge,Ecommerce,Add to Cart,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16633,0,FAIL
+TC_DELETE_EMP_019,B1023,1/20/2026 9:10,Staging,Firefox,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32228,3,FAIL
+TC_DELETE_EMP_004,B1036,1/20/2026 9:12,UAT,Edge,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7310,0,PASS
+TC_ADD_EMP_019,B1007,1/20/2026 9:14,Staging,Edge,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7441,0,PASS
+TC_EDIT_EMP_037,B1012,1/20/2026 9:16,QA,Chrome,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3981,0,PASS
+TC_PURCHASE_026,B1029,1/20/2026 9:18,QA,Edge,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34619,1,FAIL
+TC_ADD_CART_044,B1028,1/20/2026 9:20,QA,Edge,Ecommerce,Add to Cart,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15725,1,FAIL
+TC_RENT_001,B1033,1/20/2026 9:22,QA,Firefox,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31065,3,FAIL
+TC_RENT_017,B1012,1/20/2026 9:24,Staging,Chrome,Ecommerce,Rent Item,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16666,1,FAIL
+TC_VIEW_EMP_015,B1014,1/20/2026 9:26,UAT,Firefox,Employee,View Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49223,0,FAIL
+TC_ADD_EMP_014,B1040,1/20/2026 9:28,UAT,Chrome,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19748,0,FAIL
+TC_ADD_CART_050,B1023,1/20/2026 9:30,QA,Edge,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30488,1,FAIL
+TC_EDIT_EMP_006,B1049,1/20/2026 9:32,Staging,Firefox,Employee,Edit Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17130,1,FAIL
+TC_RENT_020,B1007,1/20/2026 9:34,UAT,Edge,Ecommerce,Rent Item,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16642,0,FAIL
+TC_LOGIN_023,B1004,1/20/2026 9:36,UAT,Firefox,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,7154,0,PASS
+TC_RENT_029,B1016,1/20/2026 9:38,QA,Firefox,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,7788,0,PASS
+TC_RENT_034,B1043,1/20/2026 9:40,Staging,Edge,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33703,2,FAIL
+TC_RENT_021,B1031,1/20/2026 9:42,Staging,Firefox,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,2054,0,PASS
+TC_VIEW_EMP_040,B1030,1/20/2026 9:44,QA,Edge,Employee,View Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18733,1,FAIL
+TC_PURCHASE_014,B1025,1/20/2026 9:46,Staging,Chrome,Ecommerce,Purchase,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17317,1,FAIL
+TC_PURCHASE_008,B1019,1/20/2026 9:48,Staging,Chrome,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,4138,0,PASS
+TC_DELETE_EMP_049,B1012,1/20/2026 9:50,Staging,Chrome,Employee,Delete Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18615,1,FAIL
+TC_VIEW_EMP_041,B1020,1/20/2026 9:52,Staging,Firefox,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2363,0,PASS
+TC_EDIT_EMP_032,B1040,1/20/2026 9:54,UAT,Edge,Employee,Edit Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33798,2,FAIL
+TC_LOGIN_011,B1010,1/20/2026 9:56,QA,Chrome,Authentication,Click Login Button,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30709,1,FAIL
+TC_ADD_CART_042,B1039,1/20/2026 9:58,UAT,Chrome,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,2662,0,PASS
+TC_RENT_044,B1047,1/20/2026 10:00,QA,Firefox,Ecommerce,Rent Item,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48006,1,FAIL
+TC_VIEW_EMP_007,B1036,1/20/2026 10:02,QA,Firefox,Employee,View Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45195,0,FAIL
+TC_VIEW_EMP_035,B1026,1/20/2026 10:04,QA,Firefox,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3446,0,PASS
+TC_DELETE_EMP_044,B1049,1/20/2026 10:06,UAT,Firefox,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7526,0,PASS
+TC_DELETE_EMP_038,B1014,1/20/2026 10:08,Staging,Edge,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4268,0,PASS
+TC_RENT_028,B1026,1/20/2026 10:10,UAT,Firefox,Ecommerce,Rent Item,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19465,0,FAIL
+TC_VIEW_PRODUCT_041,B1019,1/20/2026 10:12,QA,Chrome,Ecommerce,View Product,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17638,0,FAIL
+TC_DELETE_EMP_006,B1004,1/20/2026 10:14,Staging,Firefox,Employee,Delete Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16479,1,FAIL
+TC_PURCHASE_043,B1009,1/20/2026 10:16,QA,Chrome,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31401,2,FAIL
+TC_ADD_CART_023,B1006,1/20/2026 10:18,UAT,Firefox,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,5671,0,PASS
+TC_ADD_EMP_024,B1024,1/20/2026 10:20,UAT,Edge,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4214,0,PASS
+TC_LOGIN_036,B1013,1/20/2026 10:22,Staging,Chrome,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,4811,0,PASS
+TC_PURCHASE_008,B1018,1/20/2026 10:24,Staging,Firefox,Ecommerce,Purchase,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16261,0,FAIL
+TC_ADD_EMP_050,B1000,1/20/2026 10:26,UAT,Firefox,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17647,1,FAIL
+TC_VIEW_PRODUCT_002,B1024,1/20/2026 10:28,UAT,Firefox,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,3253,0,PASS
+TC_DELETE_EMP_001,B1043,1/20/2026 10:30,Staging,Chrome,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7127,0,PASS
+TC_EDIT_EMP_031,B1040,1/20/2026 10:32,QA,Edge,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5055,0,PASS
+TC_DELETE_EMP_024,B1007,1/20/2026 10:34,UAT,Edge,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3877,0,PASS
+TC_ADD_EMP_009,B1010,1/20/2026 10:36,QA,Chrome,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19050,1,FAIL
+TC_ADD_EMP_002,B1043,1/20/2026 10:38,UAT,Firefox,Employee,Save Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30554,3,FAIL
+TC_PURCHASE_004,B1039,1/20/2026 10:40,UAT,Chrome,Ecommerce,Purchase,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19677,1,FAIL
+TC_ADD_EMP_026,B1013,1/20/2026 10:42,Staging,Firefox,Employee,Save Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32479,2,FAIL
+TC_RENT_029,B1009,1/20/2026 10:44,UAT,Edge,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,7754,0,PASS
+TC_ADD_CART_001,B1033,1/20/2026 10:46,Staging,Chrome,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34357,1,FAIL
+TC_ADD_EMP_032,B1032,1/20/2026 10:48,UAT,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7189,0,PASS
+TC_VIEW_EMP_008,B1005,1/20/2026 10:50,UAT,Edge,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4781,0,PASS
+TC_LOGIN_005,B1044,1/20/2026 10:52,QA,Edge,Authentication,Click Login Button,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45131,0,FAIL
+TC_VIEW_EMP_014,B1038,1/20/2026 10:54,QA,Edge,Employee,View Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45527,0,FAIL
+TC_PURCHASE_042,B1021,1/20/2026 10:56,Staging,Chrome,Ecommerce,Purchase,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45655,0,FAIL
+TC_VIEW_PRODUCT_011,B1042,1/20/2026 10:58,Staging,Chrome,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,7120,0,PASS
+TC_RENT_027,B1050,1/20/2026 11:00,Staging,Edge,Ecommerce,Rent Item,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16925,0,FAIL
+TC_EDIT_EMP_027,B1035,1/20/2026 11:02,UAT,Chrome,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3016,0,PASS
+TC_ADD_EMP_037,B1027,1/20/2026 11:04,QA,Firefox,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17840,0,FAIL
+TC_ADD_CART_026,B1046,1/20/2026 11:06,Staging,Chrome,Ecommerce,Add to Cart,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16439,1,FAIL
+TC_VIEW_PRODUCT_023,B1050,1/20/2026 11:08,Staging,Edge,Ecommerce,View Product,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18655,1,FAIL
+TC_VIEW_PRODUCT_003,B1035,1/20/2026 11:10,QA,Firefox,Ecommerce,View Product,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48997,0,FAIL
+TC_PURCHASE_047,B1043,1/20/2026 11:12,Staging,Firefox,Ecommerce,Purchase,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46429,1,FAIL
+TC_ADD_CART_044,B1040,1/20/2026 11:14,Staging,Chrome,Ecommerce,Add to Cart,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17609,1,FAIL
+TC_VIEW_EMP_038,B1037,1/20/2026 11:16,Staging,Chrome,Employee,View Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18079,0,FAIL
+TC_EDIT_EMP_041,B1037,1/20/2026 11:18,Staging,Edge,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4919,0,PASS
+TC_DELETE_EMP_028,B1043,1/20/2026 11:20,Staging,Firefox,Employee,Delete Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48444,1,FAIL
+TC_ADD_EMP_020,B1041,1/20/2026 11:22,Staging,Chrome,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4685,0,PASS
+TC_ADD_EMP_015,B1007,1/20/2026 11:24,Staging,Firefox,Employee,Save Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48680,0,FAIL
+TC_RENT_034,B1025,1/20/2026 11:26,UAT,Chrome,Ecommerce,Rent Item,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19667,0,FAIL
+TC_DELETE_EMP_038,B1041,1/20/2026 11:28,QA,Edge,Employee,Delete Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46025,1,FAIL
+TC_ADD_CART_003,B1044,1/20/2026 11:30,QA,Chrome,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33070,3,FAIL
+TC_DELETE_EMP_048,B1017,1/20/2026 11:32,UAT,Firefox,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33872,3,FAIL
+TC_LOGIN_017,B1011,1/20/2026 11:34,UAT,Edge,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,7614,0,PASS
+TC_RENT_002,B1037,1/20/2026 11:36,Staging,Firefox,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31268,2,FAIL
+TC_PURCHASE_038,B1001,1/20/2026 11:38,Staging,Edge,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,6967,0,PASS
+TC_LOGIN_037,B1010,1/20/2026 11:40,UAT,Edge,Authentication,Click Login Button,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48740,1,FAIL
+TC_VIEW_PRODUCT_045,B1040,1/20/2026 11:42,Staging,Edge,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,3279,0,PASS
+TC_PURCHASE_004,B1042,1/20/2026 11:44,QA,Edge,Ecommerce,Purchase,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15476,1,FAIL
+TC_RENT_047,B1004,1/20/2026 11:46,QA,Edge,Ecommerce,Rent Item,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48383,0,FAIL
+TC_VIEW_EMP_005,B1008,1/20/2026 11:48,QA,Firefox,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2632,0,PASS
+TC_DELETE_EMP_028,B1022,1/20/2026 11:50,QA,Firefox,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30157,3,FAIL
+TC_VIEW_EMP_004,B1048,1/20/2026 11:52,Staging,Edge,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7081,0,PASS
+TC_LOGIN_033,B1046,1/20/2026 11:54,QA,Firefox,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,5865,0,PASS
+TC_DELETE_EMP_024,B1010,1/20/2026 11:56,UAT,Edge,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32085,1,FAIL
+TC_PURCHASE_015,B1036,1/20/2026 11:58,UAT,Chrome,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34446,2,FAIL
+TC_ADD_EMP_015,B1021,1/20/2026 12:00,QA,Firefox,Employee,Save Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30769,3,FAIL
+TC_ADD_EMP_038,B1006,1/20/2026 12:02,QA,Chrome,Employee,Save Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31555,2,FAIL
+TC_ADD_EMP_044,B1005,1/20/2026 12:04,QA,Firefox,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19377,0,FAIL
+TC_VIEW_EMP_041,B1048,1/20/2026 12:06,Staging,Edge,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4559,0,PASS
+TC_LOGIN_020,B1016,1/20/2026 12:08,QA,Edge,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17360,0,FAIL
+TC_PURCHASE_037,B1013,1/20/2026 12:10,Staging,Edge,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,5174,0,PASS
+TC_PURCHASE_030,B1039,1/20/2026 12:12,QA,Chrome,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,3891,0,PASS
+TC_VIEW_PRODUCT_003,B1048,1/20/2026 12:14,QA,Firefox,Ecommerce,View Product,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30193,2,FAIL
+TC_ADD_EMP_047,B1026,1/20/2026 12:16,UAT,Chrome,Employee,Save Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34210,2,FAIL
+TC_DELETE_EMP_047,B1050,1/20/2026 12:18,Staging,Edge,Employee,Delete Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15542,1,FAIL
+TC_ADD_CART_036,B1017,1/20/2026 12:20,UAT,Firefox,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,5030,0,PASS
+TC_LOGIN_011,B1017,1/20/2026 12:22,Staging,Edge,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17204,1,FAIL
+TC_LOGIN_004,B1030,1/20/2026 12:24,UAT,Firefox,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16437,0,FAIL
+TC_ADD_EMP_019,B1012,1/20/2026 12:26,QA,Chrome,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18626,1,FAIL
+TC_VIEW_EMP_036,B1019,1/20/2026 12:28,UAT,Edge,Employee,View Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46661,0,FAIL
+TC_ADD_EMP_018,B1003,1/20/2026 12:30,UAT,Edge,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15910,0,FAIL
+TC_ADD_EMP_008,B1028,1/20/2026 12:32,QA,Edge,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6328,0,PASS
+TC_LOGIN_012,B1040,1/20/2026 12:34,Staging,Chrome,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,2959,0,PASS
+TC_EDIT_EMP_027,B1039,1/20/2026 12:36,UAT,Edge,Employee,Edit Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49305,0,FAIL
+TC_ADD_EMP_015,B1013,1/20/2026 12:38,UAT,Chrome,Employee,Save Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30988,1,FAIL
+TC_VIEW_PRODUCT_007,B1047,1/20/2026 12:40,Staging,Firefox,Ecommerce,View Product,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31411,3,FAIL
+TC_ADD_CART_034,B1049,1/20/2026 12:42,QA,Chrome,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32866,1,FAIL
+TC_EDIT_EMP_023,B1003,1/20/2026 12:44,QA,Chrome,Employee,Edit Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33245,2,FAIL
+TC_ADD_EMP_004,B1010,1/20/2026 12:46,Staging,Chrome,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15486,1,FAIL
+TC_LOGIN_022,B1025,1/20/2026 12:48,Staging,Firefox,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18980,0,FAIL
+TC_DELETE_EMP_028,B1009,1/20/2026 12:50,QA,Firefox,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32281,2,FAIL
+TC_DELETE_EMP_018,B1020,1/20/2026 12:52,UAT,Firefox,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5025,0,PASS
+TC_PURCHASE_048,B1031,1/20/2026 12:54,Staging,Firefox,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,3847,0,PASS
+TC_ADD_CART_040,B1002,1/20/2026 12:56,Staging,Edge,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,4157,0,PASS
+TC_PURCHASE_008,B1030,1/20/2026 12:58,UAT,Chrome,Ecommerce,Purchase,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48384,0,FAIL
+TC_ADD_CART_017,B1013,1/20/2026 13:00,QA,Firefox,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,7923,0,PASS
+TC_RENT_007,B1047,1/20/2026 13:02,UAT,Edge,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32172,2,FAIL
+TC_ADD_CART_001,B1014,1/20/2026 13:04,Staging,Edge,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30207,3,FAIL
+TC_PURCHASE_016,B1035,1/20/2026 13:06,QA,Firefox,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31068,3,FAIL
+TC_LOGIN_034,B1028,1/20/2026 13:08,UAT,Edge,Authentication,Click Login Button,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32724,1,FAIL
+TC_LOGIN_024,B1024,1/20/2026 13:10,Staging,Edge,Authentication,Click Login Button,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34735,2,FAIL
+TC_RENT_011,B1000,1/20/2026 13:12,UAT,Edge,Ecommerce,Rent Item,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15582,0,FAIL
+TC_ADD_EMP_021,B1023,1/20/2026 13:14,Staging,Chrome,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7941,0,PASS
+TC_RENT_009,B1026,1/20/2026 13:16,Staging,Firefox,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,4630,0,PASS
+TC_VIEW_EMP_034,B1013,1/20/2026 13:18,UAT,Chrome,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5409,0,PASS
+TC_ADD_CART_044,B1050,1/20/2026 13:20,QA,Edge,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,7004,0,PASS
+TC_DELETE_EMP_044,B1004,1/20/2026 13:22,Staging,Firefox,Employee,Delete Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48431,0,FAIL
+TC_EDIT_EMP_014,B1031,1/20/2026 13:24,UAT,Chrome,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4070,0,PASS
+TC_ADD_CART_040,B1007,1/20/2026 13:26,UAT,Firefox,Ecommerce,Add to Cart,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15266,0,FAIL
+TC_PURCHASE_048,B1007,1/20/2026 13:28,Staging,Edge,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32238,3,FAIL
+TC_VIEW_EMP_042,B1029,1/20/2026 13:30,QA,Firefox,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7834,0,PASS
+TC_PURCHASE_027,B1011,1/20/2026 13:32,UAT,Chrome,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32345,3,FAIL
+TC_LOGIN_017,B1022,1/20/2026 13:34,Staging,Chrome,Authentication,Click Login Button,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33239,3,FAIL
+TC_ADD_EMP_001,B1032,1/20/2026 13:36,QA,Firefox,Employee,Save Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31025,2,FAIL
+TC_VIEW_EMP_021,B1044,1/20/2026 13:38,QA,Chrome,Employee,View Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45321,0,FAIL
+TC_ADD_EMP_026,B1030,1/20/2026 13:40,Staging,Chrome,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15910,1,FAIL
+TC_DELETE_EMP_038,B1019,1/20/2026 13:42,UAT,Firefox,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2567,0,PASS
+TC_VIEW_EMP_047,B1050,1/20/2026 13:44,UAT,Chrome,Employee,View Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17616,1,FAIL
+TC_DELETE_EMP_016,B1001,1/20/2026 13:46,QA,Chrome,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3850,0,PASS
+TC_LOGIN_001,B1016,1/20/2026 13:48,UAT,Edge,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,4347,0,PASS
+TC_VIEW_PRODUCT_033,B1024,1/20/2026 13:50,QA,Firefox,Ecommerce,View Product,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49978,0,FAIL
+TC_VIEW_EMP_029,B1029,1/20/2026 13:52,QA,Chrome,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2390,0,PASS
+TC_DELETE_EMP_035,B1030,1/20/2026 13:54,QA,Chrome,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7936,0,PASS
+TC_VIEW_PRODUCT_002,B1022,1/20/2026 13:56,UAT,Chrome,Ecommerce,View Product,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32782,1,FAIL
+TC_VIEW_EMP_023,B1024,1/20/2026 13:58,QA,Chrome,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4150,0,PASS
+TC_RENT_007,B1013,1/20/2026 14:00,UAT,Firefox,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,7599,0,PASS
+TC_ADD_CART_007,B1006,1/20/2026 14:02,UAT,Chrome,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34715,1,FAIL
+TC_ADD_CART_007,B1023,1/20/2026 14:04,Staging,Firefox,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,5001,0,PASS
+TC_VIEW_EMP_031,B1005,1/20/2026 14:06,Staging,Edge,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3213,0,PASS
+TC_ADD_EMP_023,B1050,1/20/2026 14:08,Staging,Firefox,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19541,1,FAIL
+TC_PURCHASE_001,B1006,1/20/2026 14:10,UAT,Chrome,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,2224,0,PASS
+TC_EDIT_EMP_039,B1032,1/20/2026 14:12,QA,Edge,Employee,Edit Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16358,1,FAIL
+TC_VIEW_PRODUCT_034,B1003,1/20/2026 14:14,Staging,Firefox,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,7645,0,PASS
+TC_ADD_CART_048,B1036,1/20/2026 14:16,UAT,Chrome,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34918,1,FAIL
+TC_DELETE_EMP_027,B1016,1/20/2026 14:18,QA,Firefox,Employee,Delete Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48312,0,FAIL
+TC_ADD_CART_011,B1007,1/20/2026 14:20,UAT,Edge,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31288,2,FAIL
+TC_DELETE_EMP_022,B1046,1/20/2026 14:22,UAT,Edge,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5145,0,PASS
+TC_VIEW_PRODUCT_047,B1025,1/20/2026 14:24,UAT,Firefox,Ecommerce,View Product,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30854,3,FAIL
+TC_VIEW_PRODUCT_001,B1043,1/20/2026 14:26,Staging,Edge,Ecommerce,View Product,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17522,1,FAIL
+TC_EDIT_EMP_045,B1007,1/20/2026 14:28,Staging,Chrome,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3867,0,PASS
+TC_EDIT_EMP_024,B1042,1/20/2026 14:30,UAT,Edge,Employee,Edit Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46669,1,FAIL
+TC_VIEW_EMP_025,B1013,1/20/2026 14:32,Staging,Firefox,Employee,View Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49386,1,FAIL
+TC_ADD_CART_026,B1017,1/20/2026 14:34,Staging,Firefox,Ecommerce,Add to Cart,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48651,0,FAIL
+TC_DELETE_EMP_010,B1037,1/20/2026 14:36,QA,Edge,Employee,Delete Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49916,1,FAIL
+TC_VIEW_PRODUCT_020,B1020,1/20/2026 14:38,Staging,Firefox,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,2801,0,PASS
+TC_LOGIN_019,B1042,1/20/2026 14:40,UAT,Edge,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17807,1,FAIL
+TC_PURCHASE_024,B1047,1/20/2026 14:42,QA,Firefox,Ecommerce,Purchase,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48506,1,FAIL
+TC_ADD_CART_003,B1005,1/20/2026 14:44,UAT,Firefox,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,2012,0,PASS
+TC_PURCHASE_035,B1001,1/20/2026 14:46,QA,Edge,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33949,3,FAIL
+TC_LOGIN_045,B1012,1/20/2026 14:48,Staging,Firefox,Authentication,Click Login Button,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49904,0,FAIL
+TC_RENT_038,B1020,1/20/2026 14:50,UAT,Chrome,Ecommerce,Rent Item,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45525,1,FAIL
+TC_LOGIN_024,B1032,1/20/2026 14:52,Staging,Chrome,Authentication,Click Login Button,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45010,1,FAIL
+TC_LOGIN_026,B1024,1/20/2026 14:54,Staging,Edge,Authentication,Click Login Button,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34903,2,FAIL
+TC_EDIT_EMP_014,B1005,1/20/2026 14:56,QA,Firefox,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4000,0,PASS
+TC_VIEW_EMP_004,B1017,1/20/2026 14:58,Staging,Edge,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2759,0,PASS
+TC_ADD_EMP_035,B1020,1/20/2026 15:00,UAT,Firefox,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18325,1,FAIL
+TC_EDIT_EMP_006,B1017,1/20/2026 15:02,UAT,Chrome,Employee,Edit Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18348,0,FAIL
+TC_LOGIN_041,B1030,1/20/2026 15:04,Staging,Edge,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,3967,0,PASS
+TC_DELETE_EMP_028,B1039,1/20/2026 15:06,QA,Chrome,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2383,0,PASS
+TC_LOGIN_007,B1036,1/20/2026 15:08,UAT,Firefox,Authentication,Click Login Button,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33616,1,FAIL
+TC_RENT_001,B1040,1/20/2026 15:10,QA,Edge,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,4776,0,PASS
+TC_VIEW_EMP_016,B1015,1/20/2026 15:12,Staging,Edge,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32031,3,FAIL
+TC_LOGIN_033,B1013,1/20/2026 15:14,UAT,Edge,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,6259,0,PASS
+TC_ADD_EMP_002,B1017,1/20/2026 15:16,UAT,Edge,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15227,1,FAIL
+TC_ADD_CART_045,B1045,1/20/2026 15:18,QA,Chrome,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,2142,0,PASS
+TC_RENT_004,B1047,1/20/2026 15:20,Staging,Edge,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,2891,0,PASS
+TC_DELETE_EMP_008,B1049,1/20/2026 15:22,Staging,Firefox,Employee,Delete Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46503,1,FAIL
+TC_VIEW_PRODUCT_041,B1003,1/20/2026 15:24,UAT,Chrome,Ecommerce,View Product,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18513,0,FAIL
+TC_LOGIN_032,B1008,1/20/2026 15:26,Staging,Chrome,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,5027,0,PASS
+TC_PURCHASE_011,B1005,1/20/2026 15:28,UAT,Firefox,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,6743,0,PASS
+TC_ADD_CART_027,B1020,1/20/2026 15:30,QA,Edge,Ecommerce,Add to Cart,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49801,1,FAIL
+TC_LOGIN_034,B1000,1/20/2026 15:32,UAT,Chrome,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,4808,0,PASS
+TC_PURCHASE_031,B1003,1/20/2026 15:34,Staging,Firefox,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,2654,0,PASS
+TC_RENT_040,B1018,1/20/2026 15:36,QA,Firefox,Ecommerce,Rent Item,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45811,1,FAIL
+TC_ADD_CART_018,B1004,1/20/2026 15:38,QA,Chrome,Ecommerce,Add to Cart,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49091,0,FAIL
+TC_LOGIN_009,B1022,1/20/2026 15:40,QA,Edge,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,7152,0,PASS
+TC_ADD_EMP_039,B1023,1/20/2026 15:42,Staging,Chrome,Employee,Save Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32365,2,FAIL
+TC_ADD_CART_021,B1039,1/20/2026 15:44,UAT,Edge,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,2982,0,PASS
+TC_ADD_EMP_045,B1031,1/20/2026 15:46,UAT,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3723,0,PASS
+TC_ADD_EMP_040,B1005,1/20/2026 15:48,UAT,Chrome,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5135,0,PASS
+TC_VIEW_PRODUCT_035,B1028,1/20/2026 15:50,Staging,Edge,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,4752,0,PASS
+TC_ADD_EMP_049,B1012,1/20/2026 15:52,QA,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7073,0,PASS
+TC_LOGIN_022,B1047,1/20/2026 15:54,QA,Firefox,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15797,1,FAIL
+TC_EDIT_EMP_011,B1049,1/20/2026 15:56,Staging,Chrome,Employee,Edit Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32564,2,FAIL
+TC_PURCHASE_020,B1041,1/20/2026 15:58,QA,Edge,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,3192,0,PASS
+TC_VIEW_EMP_050,B1048,1/20/2026 16:00,QA,Firefox,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6754,0,PASS
+TC_LOGIN_045,B1005,1/20/2026 16:02,QA,Edge,Authentication,Click Login Button,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34926,1,FAIL
+TC_RENT_005,B1019,1/20/2026 16:04,Staging,Firefox,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34285,3,FAIL
+TC_ADD_EMP_016,B1022,1/20/2026 16:06,QA,Firefox,Employee,Save Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31439,3,FAIL
+TC_EDIT_EMP_041,B1007,1/20/2026 16:08,UAT,Edge,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5849,0,PASS
+TC_LOGIN_017,B1021,1/20/2026 16:10,QA,Edge,Authentication,Click Login Button,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31388,3,FAIL
+TC_ADD_EMP_017,B1037,1/20/2026 16:12,UAT,Chrome,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4659,0,PASS
+TC_RENT_050,B1024,1/20/2026 16:14,QA,Chrome,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,7129,0,PASS
+TC_EDIT_EMP_049,B1020,1/20/2026 16:16,UAT,Firefox,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3458,0,PASS
+TC_VIEW_PRODUCT_031,B1005,1/20/2026 16:18,UAT,Firefox,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,2654,0,PASS
+TC_PURCHASE_026,B1031,1/20/2026 16:20,UAT,Edge,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,7033,0,PASS
+TC_VIEW_EMP_009,B1030,1/20/2026 16:22,UAT,Edge,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30734,1,FAIL
+TC_PURCHASE_046,B1046,1/20/2026 16:24,Staging,Firefox,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,3005,0,PASS
+TC_DELETE_EMP_047,B1049,1/20/2026 16:26,QA,Firefox,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5704,0,PASS
+TC_RENT_039,B1006,1/20/2026 16:28,QA,Chrome,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,6807,0,PASS
+TC_LOGIN_032,B1017,1/20/2026 16:30,Staging,Edge,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,4217,0,PASS
+TC_RENT_025,B1048,1/20/2026 16:32,UAT,Chrome,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30374,2,FAIL
+TC_PURCHASE_008,B1028,1/20/2026 16:34,QA,Chrome,Ecommerce,Purchase,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46602,1,FAIL
+TC_VIEW_PRODUCT_043,B1009,1/20/2026 16:36,QA,Chrome,Ecommerce,View Product,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49683,0,FAIL
+TC_LOGIN_037,B1016,1/20/2026 16:38,QA,Edge,Authentication,Click Login Button,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45560,0,FAIL
+TC_VIEW_PRODUCT_040,B1020,1/20/2026 16:40,Staging,Firefox,Ecommerce,View Product,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17061,0,FAIL
+TC_DELETE_EMP_014,B1044,1/20/2026 16:42,QA,Firefox,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5998,0,PASS
+TC_VIEW_EMP_025,B1025,1/20/2026 16:44,Staging,Edge,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32299,1,FAIL
+TC_RENT_040,B1050,1/20/2026 16:46,UAT,Chrome,Ecommerce,Rent Item,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46116,0,FAIL
+TC_VIEW_PRODUCT_027,B1016,1/20/2026 16:48,QA,Firefox,Ecommerce,View Product,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16915,1,FAIL
+TC_ADD_CART_003,B1036,1/20/2026 16:50,QA,Chrome,Ecommerce,Add to Cart,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15218,0,FAIL
+TC_DELETE_EMP_022,B1035,1/20/2026 16:52,UAT,Edge,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34876,1,FAIL
+TC_ADD_EMP_048,B1047,1/20/2026 16:54,QA,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3104,0,PASS
+TC_ADD_EMP_017,B1026,1/20/2026 16:56,QA,Edge,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5092,0,PASS
+TC_RENT_024,B1008,1/20/2026 16:58,QA,Chrome,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31622,3,FAIL
+TC_PURCHASE_022,B1027,1/20/2026 17:00,Staging,Chrome,Ecommerce,Purchase,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17581,1,FAIL
+TC_ADD_CART_015,B1033,1/20/2026 17:02,UAT,Chrome,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,5953,0,PASS
+TC_PURCHASE_019,B1032,1/20/2026 17:04,Staging,Edge,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30531,2,FAIL
+TC_RENT_041,B1012,1/20/2026 17:06,UAT,Edge,Ecommerce,Rent Item,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19627,1,FAIL
+TC_LOGIN_005,B1013,1/20/2026 17:08,QA,Firefox,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,6260,0,PASS
+TC_LOGIN_011,B1022,1/20/2026 17:10,UAT,Firefox,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,4821,0,PASS
+TC_RENT_037,B1011,1/20/2026 17:12,QA,Firefox,Ecommerce,Rent Item,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49487,0,FAIL
+TC_ADD_EMP_032,B1003,1/20/2026 17:14,QA,Chrome,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6619,0,PASS
+TC_PURCHASE_047,B1038,1/20/2026 17:16,Staging,Firefox,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,5108,0,PASS
+TC_RENT_040,B1032,1/20/2026 17:18,Staging,Firefox,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34311,1,FAIL
+TC_ADD_CART_031,B1015,1/20/2026 17:20,Staging,Chrome,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30792,1,FAIL
+TC_EDIT_EMP_012,B1003,1/20/2026 17:22,QA,Chrome,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4567,0,PASS
+TC_ADD_CART_028,B1035,1/20/2026 17:24,UAT,Edge,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,7034,0,PASS
+TC_EDIT_EMP_024,B1034,1/20/2026 17:26,QA,Chrome,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7550,0,PASS
+TC_ADD_CART_037,B1009,1/20/2026 17:28,UAT,Chrome,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34897,3,FAIL
+TC_LOGIN_047,B1046,1/20/2026 17:30,Staging,Chrome,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18452,1,FAIL
+TC_VIEW_EMP_045,B1014,1/20/2026 17:32,UAT,Edge,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31104,1,FAIL
+TC_LOGIN_007,B1002,1/20/2026 17:34,QA,Chrome,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,5420,0,PASS
+TC_EDIT_EMP_017,B1036,1/20/2026 17:36,QA,Firefox,Employee,Edit Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15568,1,FAIL
+TC_EDIT_EMP_004,B1035,1/20/2026 17:38,QA,Chrome,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4545,0,PASS
+TC_RENT_036,B1019,1/20/2026 17:40,Staging,Chrome,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30327,1,FAIL
+TC_DELETE_EMP_007,B1043,1/20/2026 17:42,QA,Firefox,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34290,2,FAIL
+TC_PURCHASE_027,B1033,1/20/2026 17:44,Staging,Edge,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,7747,0,PASS
+TC_ADD_CART_010,B1000,1/20/2026 17:46,UAT,Firefox,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31495,3,FAIL
+TC_DELETE_EMP_031,B1029,1/20/2026 17:48,Staging,Firefox,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5425,0,PASS
+TC_ADD_EMP_012,B1043,1/20/2026 17:50,UAT,Chrome,Employee,Save Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48646,1,FAIL
+TC_ADD_EMP_019,B1014,1/20/2026 17:52,QA,Chrome,Employee,Save Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34816,1,FAIL
+TC_ADD_CART_014,B1042,1/20/2026 17:54,UAT,Chrome,Ecommerce,Add to Cart,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18877,0,FAIL
+TC_VIEW_EMP_006,B1011,1/20/2026 17:56,Staging,Edge,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2486,0,PASS
+TC_LOGIN_028,B1049,1/20/2026 17:58,UAT,Chrome,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,5099,0,PASS
+TC_VIEW_PRODUCT_014,B1017,1/20/2026 18:00,Staging,Firefox,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,6436,0,PASS
+TC_PURCHASE_043,B1010,1/20/2026 18:02,UAT,Edge,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,5888,0,PASS
+TC_LOGIN_040,B1027,1/20/2026 18:04,UAT,Edge,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18250,1,FAIL
+TC_RENT_039,B1036,1/20/2026 18:06,QA,Edge,Ecommerce,Rent Item,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48234,0,FAIL
+TC_RENT_006,B1032,1/20/2026 18:08,QA,Chrome,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30580,1,FAIL
+TC_LOGIN_003,B1045,1/20/2026 18:10,UAT,Chrome,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17731,0,FAIL
+TC_DELETE_EMP_002,B1027,1/20/2026 18:12,Staging,Edge,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30318,2,FAIL
+TC_LOGIN_016,B1045,1/20/2026 18:14,QA,Firefox,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,6703,0,PASS
+TC_PURCHASE_028,B1044,1/20/2026 18:16,UAT,Firefox,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33216,3,FAIL
+TC_PURCHASE_029,B1040,1/20/2026 18:18,Staging,Chrome,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30248,2,FAIL
+TC_DELETE_EMP_013,B1020,1/20/2026 18:20,Staging,Chrome,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7155,0,PASS
+TC_RENT_048,B1031,1/20/2026 18:22,UAT,Firefox,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30294,3,FAIL
+TC_ADD_EMP_034,B1047,1/20/2026 18:24,UAT,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6525,0,PASS
+TC_DELETE_EMP_029,B1046,1/20/2026 18:26,QA,Firefox,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31180,1,FAIL
+TC_VIEW_PRODUCT_019,B1039,1/20/2026 18:28,UAT,Firefox,Ecommerce,View Product,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18271,0,FAIL
+TC_EDIT_EMP_026,B1015,1/20/2026 18:30,UAT,Firefox,Employee,Edit Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34282,1,FAIL
+TC_ADD_EMP_012,B1039,1/20/2026 18:32,Staging,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6150,0,PASS
+TC_ADD_EMP_016,B1009,1/20/2026 18:34,UAT,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5733,0,PASS
+TC_PURCHASE_026,B1008,1/20/2026 18:36,UAT,Firefox,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30757,2,FAIL
+TC_EDIT_EMP_008,B1023,1/20/2026 18:38,UAT,Edge,Employee,Edit Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16568,0,FAIL
+TC_VIEW_PRODUCT_024,B1039,1/20/2026 18:40,Staging,Firefox,Ecommerce,View Product,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19659,0,FAIL
+TC_ADD_EMP_028,B1043,1/20/2026 18:42,QA,Firefox,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17327,0,FAIL
+TC_ADD_EMP_046,B1049,1/20/2026 18:44,UAT,Edge,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17166,0,FAIL
+TC_EDIT_EMP_017,B1014,1/20/2026 18:46,Staging,Edge,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3487,0,PASS
+TC_DELETE_EMP_038,B1022,1/20/2026 18:48,Staging,Firefox,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4575,0,PASS
+TC_LOGIN_041,B1017,1/20/2026 18:50,UAT,Chrome,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15727,1,FAIL
+TC_VIEW_PRODUCT_022,B1012,1/20/2026 18:52,UAT,Chrome,Ecommerce,View Product,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33774,3,FAIL
+TC_VIEW_PRODUCT_015,B1036,1/20/2026 18:54,QA,Chrome,Ecommerce,View Product,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45171,1,FAIL
+TC_VIEW_EMP_027,B1008,1/20/2026 18:56,QA,Edge,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30725,2,FAIL
+TC_LOGIN_001,B1007,1/20/2026 18:58,Staging,Edge,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,6567,0,PASS
+TC_PURCHASE_026,B1011,1/20/2026 19:00,Staging,Chrome,Ecommerce,Purchase,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17549,0,FAIL
+TC_ADD_EMP_040,B1036,1/20/2026 19:02,Staging,Chrome,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17015,0,FAIL
+TC_ADD_CART_049,B1001,1/20/2026 19:04,QA,Chrome,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34584,2,FAIL
+TC_LOGIN_006,B1006,1/20/2026 19:06,UAT,Edge,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17105,1,FAIL
+TC_PURCHASE_018,B1014,1/20/2026 19:08,Staging,Edge,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,6077,0,PASS
+TC_RENT_016,B1015,1/20/2026 19:10,UAT,Edge,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,2816,0,PASS
+TC_ADD_CART_006,B1037,1/20/2026 19:12,UAT,Edge,Ecommerce,Add to Cart,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19450,1,FAIL
+TC_VIEW_PRODUCT_021,B1050,1/20/2026 19:14,UAT,Edge,Ecommerce,View Product,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19862,1,FAIL
+TC_EDIT_EMP_003,B1021,1/20/2026 19:16,UAT,Firefox,Employee,Edit Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15545,0,FAIL
+TC_PURCHASE_022,B1023,1/20/2026 19:18,UAT,Edge,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33520,1,FAIL
+TC_EDIT_EMP_041,B1023,1/20/2026 19:20,UAT,Firefox,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2774,0,PASS
+TC_DELETE_EMP_019,B1018,1/20/2026 19:22,QA,Edge,Employee,Delete Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15268,1,FAIL
+TC_VIEW_EMP_008,B1019,1/20/2026 19:24,Staging,Edge,Employee,View Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48996,0,FAIL
+TC_VIEW_PRODUCT_039,B1024,1/20/2026 19:26,UAT,Firefox,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,2299,0,PASS
+TC_RENT_039,B1002,1/20/2026 19:28,UAT,Chrome,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32076,1,FAIL
+TC_RENT_013,B1012,1/20/2026 19:30,QA,Edge,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31150,3,FAIL
+TC_VIEW_PRODUCT_026,B1002,1/20/2026 19:32,UAT,Edge,Ecommerce,View Product,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30268,1,FAIL
+TC_ADD_CART_001,B1024,1/20/2026 19:34,Staging,Chrome,Ecommerce,Add to Cart,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48473,0,FAIL
+TC_RENT_038,B1040,1/20/2026 19:36,QA,Edge,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34089,1,FAIL
+TC_ADD_EMP_036,B1021,1/20/2026 19:38,Staging,Firefox,Employee,Save Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49632,1,FAIL
+TC_VIEW_EMP_012,B1046,1/20/2026 19:40,UAT,Chrome,Employee,View Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48456,1,FAIL
+TC_ADD_EMP_028,B1028,1/20/2026 19:42,UAT,Edge,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18867,1,FAIL
+TC_DELETE_EMP_024,B1028,1/20/2026 19:44,UAT,Edge,Employee,Delete Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46740,0,FAIL
+TC_ADD_CART_034,B1038,1/20/2026 19:46,UAT,Firefox,Ecommerce,Add to Cart,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48751,0,FAIL
+TC_ADD_EMP_025,B1029,1/20/2026 19:48,QA,Edge,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3117,0,PASS
+TC_ADD_CART_042,B1024,1/20/2026 19:50,Staging,Edge,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,7580,0,PASS
+TC_ADD_EMP_035,B1041,1/20/2026 19:52,Staging,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2221,0,PASS
+TC_VIEW_EMP_045,B1048,1/20/2026 19:54,QA,Firefox,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2656,0,PASS
+TC_ADD_CART_006,B1013,1/20/2026 19:56,UAT,Chrome,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,4879,0,PASS
+TC_VIEW_EMP_047,B1030,1/20/2026 19:58,QA,Firefox,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30563,1,FAIL
+TC_DELETE_EMP_034,B1011,1/20/2026 20:00,Staging,Chrome,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30193,2,FAIL
+TC_ADD_CART_030,B1020,1/20/2026 20:02,Staging,Chrome,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,3214,0,PASS
+TC_VIEW_EMP_001,B1019,1/20/2026 20:04,UAT,Chrome,Employee,View Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,47963,1,FAIL
+TC_ADD_CART_044,B1039,1/20/2026 20:06,UAT,Firefox,Ecommerce,Add to Cart,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19785,0,FAIL
+TC_ADD_EMP_026,B1014,1/20/2026 20:08,QA,Edge,Employee,Save Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30985,2,FAIL
+TC_ADD_EMP_013,B1048,1/20/2026 20:10,Staging,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6065,0,PASS
+TC_DELETE_EMP_042,B1037,1/20/2026 20:12,UAT,Firefox,Employee,Delete Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,47148,0,FAIL
+TC_ADD_CART_050,B1004,1/20/2026 20:14,QA,Edge,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31511,2,FAIL
+TC_ADD_CART_044,B1017,1/20/2026 20:16,Staging,Edge,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,6918,0,PASS
+TC_VIEW_PRODUCT_047,B1008,1/20/2026 20:18,QA,Edge,Ecommerce,View Product,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31263,2,FAIL
+TC_DELETE_EMP_018,B1036,1/20/2026 20:20,QA,Edge,Employee,Delete Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19004,0,FAIL
+TC_ADD_CART_046,B1012,1/20/2026 20:22,UAT,Edge,Ecommerce,Add to Cart,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18315,0,FAIL
+TC_VIEW_PRODUCT_027,B1025,1/20/2026 20:24,Staging,Chrome,Ecommerce,View Product,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30155,1,FAIL
+TC_DELETE_EMP_041,B1009,1/20/2026 20:26,Staging,Firefox,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30543,3,FAIL
+TC_PURCHASE_001,B1001,1/20/2026 20:28,Staging,Edge,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32368,1,FAIL
+TC_DELETE_EMP_009,B1014,1/20/2026 20:30,QA,Chrome,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4931,0,PASS
+TC_VIEW_EMP_018,B1007,1/20/2026 20:32,UAT,Chrome,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34022,1,FAIL
+TC_ADD_CART_013,B1002,1/20/2026 20:34,UAT,Chrome,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,4529,0,PASS
+TC_DELETE_EMP_007,B1002,1/20/2026 20:36,UAT,Edge,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32231,1,FAIL
+TC_VIEW_EMP_006,B1015,1/20/2026 20:38,UAT,Chrome,Employee,View Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19075,1,FAIL
+TC_ADD_EMP_048,B1042,1/20/2026 20:40,UAT,Edge,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6146,0,PASS
+TC_VIEW_PRODUCT_042,B1038,1/20/2026 20:42,QA,Firefox,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,4951,0,PASS
+TC_PURCHASE_040,B1028,1/20/2026 20:44,UAT,Firefox,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,5220,0,PASS
+TC_ADD_CART_022,B1039,1/20/2026 20:46,Staging,Firefox,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,6657,0,PASS
+TC_LOGIN_045,B1048,1/20/2026 20:48,UAT,Chrome,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,2771,0,PASS
+TC_EDIT_EMP_002,B1047,1/20/2026 20:50,UAT,Edge,Employee,Edit Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17066,1,FAIL
+TC_VIEW_PRODUCT_008,B1022,1/20/2026 20:52,Staging,Chrome,Ecommerce,View Product,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33993,2,FAIL
+TC_VIEW_PRODUCT_017,B1004,1/20/2026 20:54,QA,Firefox,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,3027,0,PASS
+TC_PURCHASE_046,B1036,1/20/2026 20:56,QA,Chrome,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30452,1,FAIL
+TC_PURCHASE_006,B1005,1/20/2026 20:58,QA,Firefox,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,4254,0,PASS
+TC_ADD_CART_019,B1001,1/20/2026 21:00,Staging,Chrome,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31240,1,FAIL
+TC_LOGIN_039,B1040,1/20/2026 21:02,UAT,Edge,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,5315,0,PASS
+TC_EDIT_EMP_010,B1031,1/20/2026 21:04,UAT,Edge,Employee,Edit Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31063,1,FAIL
+TC_VIEW_EMP_038,B1026,1/20/2026 21:06,UAT,Chrome,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33630,1,FAIL
+TC_LOGIN_037,B1041,1/20/2026 21:08,QA,Edge,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,6708,0,PASS
+TC_ADD_EMP_024,B1004,1/20/2026 21:10,Staging,Edge,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4964,0,PASS
+TC_VIEW_EMP_022,B1045,1/20/2026 21:12,Staging,Firefox,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33438,2,FAIL
+TC_ADD_CART_018,B1026,1/20/2026 21:14,Staging,Chrome,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,5668,0,PASS
+TC_VIEW_EMP_028,B1038,1/20/2026 21:16,UAT,Edge,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34635,1,FAIL
+TC_DELETE_EMP_032,B1034,1/20/2026 21:18,UAT,Chrome,Employee,Delete Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46522,0,FAIL
+TC_LOGIN_021,B1011,1/20/2026 21:20,UAT,Edge,Authentication,Click Login Button,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32120,2,FAIL
+TC_PURCHASE_046,B1010,1/20/2026 21:22,QA,Edge,Ecommerce,Purchase,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49082,1,FAIL
+TC_RENT_009,B1033,1/20/2026 21:24,Staging,Chrome,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34778,3,FAIL
+TC_EDIT_EMP_027,B1034,1/20/2026 21:26,Staging,Chrome,Employee,Edit Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17531,1,FAIL
+TC_PURCHASE_040,B1028,1/20/2026 21:28,QA,Chrome,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,2170,0,PASS
+TC_DELETE_EMP_011,B1041,1/20/2026 21:30,Staging,Chrome,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30046,1,FAIL
+TC_DELETE_EMP_025,B1050,1/20/2026 21:32,UAT,Edge,Employee,Delete Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19560,0,FAIL
+TC_EDIT_EMP_038,B1015,1/20/2026 21:34,Staging,Chrome,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2708,0,PASS
+TC_DELETE_EMP_003,B1011,1/20/2026 21:36,Staging,Firefox,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34343,2,FAIL
+TC_LOGIN_050,B1007,1/20/2026 21:38,QA,Firefox,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,7491,0,PASS
+TC_LOGIN_048,B1045,1/20/2026 21:40,UAT,Firefox,Authentication,Click Login Button,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45731,0,FAIL
+TC_RENT_037,B1014,1/20/2026 21:42,Staging,Firefox,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32232,2,FAIL
+TC_PURCHASE_015,B1031,1/20/2026 21:44,UAT,Chrome,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,6396,0,PASS
+TC_ADD_EMP_013,B1045,1/20/2026 21:46,UAT,Chrome,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7789,0,PASS
+TC_ADD_EMP_037,B1030,1/20/2026 21:48,UAT,Chrome,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15029,0,FAIL
+TC_DELETE_EMP_024,B1018,1/20/2026 21:50,QA,Edge,Employee,Delete Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16772,0,FAIL
+TC_EDIT_EMP_026,B1047,1/20/2026 21:52,QA,Firefox,Employee,Edit Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19252,0,FAIL
+TC_RENT_023,B1007,1/20/2026 21:54,QA,Edge,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34514,2,FAIL
+TC_RENT_009,B1030,1/20/2026 21:56,UAT,Firefox,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,4395,0,PASS
+TC_RENT_041,B1000,1/20/2026 21:58,QA,Firefox,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,5593,0,PASS
+TC_PURCHASE_047,B1020,1/20/2026 22:00,QA,Firefox,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32808,3,FAIL
+TC_RENT_028,B1039,1/20/2026 22:02,Staging,Edge,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33297,3,FAIL
+TC_PURCHASE_036,B1033,1/20/2026 22:04,UAT,Firefox,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,7630,0,PASS
+TC_VIEW_EMP_015,B1026,1/20/2026 22:06,Staging,Edge,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30174,1,FAIL
+TC_LOGIN_029,B1003,1/20/2026 22:08,QA,Chrome,Authentication,Click Login Button,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46445,0,FAIL
+TC_VIEW_PRODUCT_013,B1010,1/20/2026 22:10,UAT,Edge,Ecommerce,View Product,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33418,3,FAIL
+TC_VIEW_PRODUCT_046,B1003,1/20/2026 22:12,UAT,Chrome,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,2906,0,PASS
+TC_ADD_EMP_015,B1039,1/20/2026 22:14,Staging,Firefox,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19511,0,FAIL
+TC_ADD_EMP_029,B1027,1/20/2026 22:16,Staging,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3429,0,PASS
+TC_ADD_EMP_010,B1000,1/20/2026 22:18,QA,Chrome,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3239,0,PASS
+TC_VIEW_PRODUCT_048,B1003,1/20/2026 22:20,UAT,Edge,Ecommerce,View Product,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19764,1,FAIL
+TC_VIEW_EMP_014,B1040,1/20/2026 22:22,QA,Chrome,Employee,View Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19012,0,FAIL
+TC_LOGIN_036,B1021,1/20/2026 22:24,QA,Firefox,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,3908,0,PASS
+TC_VIEW_EMP_011,B1014,1/20/2026 22:26,QA,Edge,Employee,View Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17240,1,FAIL
+TC_VIEW_EMP_019,B1003,1/20/2026 22:28,Staging,Firefox,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2239,0,PASS
+TC_ADD_CART_023,B1021,1/20/2026 22:30,QA,Chrome,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,5949,0,PASS
+TC_LOGIN_018,B1006,1/20/2026 22:32,UAT,Firefox,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,3849,0,PASS
+TC_ADD_EMP_039,B1032,1/20/2026 22:34,QA,Chrome,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5178,0,PASS
+TC_DELETE_EMP_035,B1000,1/20/2026 22:36,Staging,Edge,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2658,0,PASS
+TC_VIEW_EMP_003,B1003,1/20/2026 22:38,QA,Firefox,Employee,View Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17800,0,FAIL
+TC_LOGIN_002,B1004,1/20/2026 22:40,Staging,Firefox,Authentication,Click Login Button,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49091,1,FAIL
+TC_RENT_032,B1020,1/20/2026 22:42,UAT,Edge,Ecommerce,Rent Item,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,47077,1,FAIL
+TC_ADD_EMP_043,B1004,1/20/2026 22:44,Staging,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6239,0,PASS
+TC_EDIT_EMP_005,B1001,1/20/2026 22:46,QA,Edge,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4054,0,PASS
+TC_VIEW_PRODUCT_036,B1047,1/20/2026 22:48,QA,Edge,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,5962,0,PASS
+TC_ADD_CART_020,B1017,1/20/2026 22:50,QA,Edge,Ecommerce,Add to Cart,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18043,1,FAIL
+TC_ADD_CART_013,B1000,1/20/2026 22:52,QA,Chrome,Ecommerce,Add to Cart,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18096,0,FAIL
+TC_LOGIN_044,B1039,1/20/2026 22:54,Staging,Chrome,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,2047,0,PASS
+TC_EDIT_EMP_047,B1037,1/20/2026 22:56,Staging,Edge,Employee,Edit Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16280,0,FAIL
+TC_LOGIN_008,B1008,1/20/2026 22:58,UAT,Firefox,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,4579,0,PASS
+TC_ADD_CART_010,B1003,1/20/2026 23:00,QA,Firefox,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30272,3,FAIL
+TC_DELETE_EMP_012,B1014,1/20/2026 23:02,QA,Edge,Employee,Delete Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5905,0,PASS
+TC_RENT_045,B1001,1/20/2026 23:04,Staging,Edge,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,7092,0,PASS
+TC_LOGIN_018,B1025,1/20/2026 23:06,UAT,Edge,Authentication,Click Login Button,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49216,0,FAIL
+TC_DELETE_EMP_031,B1050,1/20/2026 23:08,QA,Firefox,Employee,Delete Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,15140,0,FAIL
+TC_VIEW_EMP_003,B1002,1/20/2026 23:10,QA,Edge,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6464,0,PASS
+TC_ADD_EMP_042,B1039,1/20/2026 23:12,QA,Edge,Employee,Save Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,49013,0,FAIL
+TC_VIEW_EMP_026,B1039,1/20/2026 23:14,UAT,Edge,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7269,0,PASS
+TC_VIEW_PRODUCT_005,B1000,1/20/2026 23:16,Staging,Edge,Ecommerce,View Product,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31489,1,FAIL
+TC_VIEW_EMP_011,B1042,1/20/2026 23:18,UAT,Firefox,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4195,0,PASS
+TC_EDIT_EMP_002,B1047,1/20/2026 23:20,UAT,Firefox,Employee,Edit Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3579,0,PASS
+TC_ADD_CART_045,B1046,1/20/2026 23:22,Staging,Firefox,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,6953,0,PASS
+TC_VIEW_PRODUCT_042,B1040,1/20/2026 23:24,QA,Firefox,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,4125,0,PASS
+TC_LOGIN_010,B1019,1/20/2026 23:26,UAT,Chrome,Authentication,Click Login Button,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34133,2,FAIL
+TC_VIEW_EMP_010,B1011,1/20/2026 23:28,Staging,Edge,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,2201,0,PASS
+TC_PURCHASE_003,B1018,1/20/2026 23:30,QA,Edge,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,4228,0,PASS
+TC_PURCHASE_048,B1047,1/20/2026 23:32,QA,Chrome,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31302,1,FAIL
+TC_DELETE_EMP_002,B1021,1/20/2026 23:34,Staging,Firefox,Employee,Delete Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,47502,1,FAIL
+TC_ADD_EMP_050,B1021,1/20/2026 23:36,QA,Edge,Employee,Save Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18388,1,FAIL
+TC_VIEW_EMP_022,B1019,1/20/2026 23:38,Staging,Edge,Employee,View Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19908,0,FAIL
+TC_LOGIN_003,B1002,1/20/2026 23:40,Staging,Edge,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16895,1,FAIL
+TC_RENT_016,B1023,1/20/2026 23:42,Staging,Firefox,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,3753,0,PASS
+TC_RENT_036,B1029,1/20/2026 23:44,UAT,Firefox,Ecommerce,Rent Item,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18707,1,FAIL
+TC_VIEW_EMP_032,B1022,1/20/2026 23:46,UAT,Firefox,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30701,1,FAIL
+TC_VIEW_EMP_041,B1022,1/20/2026 23:48,UAT,Firefox,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32536,2,FAIL
+TC_ADD_EMP_011,B1027,1/20/2026 23:50,Staging,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6216,0,PASS
+TC_ADD_CART_012,B1036,1/20/2026 23:52,UAT,Chrome,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33422,2,FAIL
+TC_LOGIN_043,B1017,1/20/2026 23:54,Staging,Firefox,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,4961,0,PASS
+TC_PURCHASE_039,B1002,1/20/2026 23:56,Staging,Chrome,Ecommerce,Purchase,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30644,1,FAIL
+TC_VIEW_EMP_011,B1023,1/20/2026 23:58,UAT,Edge,Employee,View Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46368,0,FAIL
+TC_ADD_EMP_026,B1039,1/21/2026 0:00,Staging,Chrome,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7583,0,PASS
+TC_ADD_CART_025,B1011,1/21/2026 0:02,UAT,Chrome,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,2321,0,PASS
+TC_RENT_004,B1010,1/21/2026 0:04,Staging,Chrome,Ecommerce,Rent Item,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18485,0,FAIL
+TC_ADD_EMP_004,B1023,1/21/2026 0:06,QA,Firefox,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,3569,0,PASS
+TC_ADD_CART_026,B1008,1/21/2026 0:08,Staging,Edge,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,3621,0,PASS
+TC_LOGIN_018,B1002,1/21/2026 0:10,UAT,Chrome,Authentication,Click Login Button,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46765,1,FAIL
+TC_VIEW_EMP_049,B1001,1/21/2026 0:12,QA,Firefox,Employee,View Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17644,0,FAIL
+TC_VIEW_EMP_014,B1049,1/21/2026 0:14,Staging,Edge,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30614,1,FAIL
+TC_DELETE_EMP_005,B1004,1/21/2026 0:16,QA,Edge,Employee,Delete Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16070,1,FAIL
+TC_LOGIN_039,B1016,1/21/2026 0:18,QA,Firefox,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16094,0,FAIL
+TC_DELETE_EMP_031,B1043,1/21/2026 0:20,QA,Firefox,Employee,Delete Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19981,0,FAIL
+TC_EDIT_EMP_050,B1022,1/21/2026 0:22,QA,Edge,Employee,Edit Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,18101,0,FAIL
+TC_ADD_EMP_013,B1006,1/21/2026 0:24,UAT,Edge,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,7114,0,PASS
+TC_VIEW_EMP_018,B1012,1/21/2026 0:26,UAT,Edge,Employee,View Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34207,2,FAIL
+TC_ADD_EMP_002,B1024,1/21/2026 0:28,QA,Chrome,Employee,Save Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33748,3,FAIL
+TC_ADD_EMP_009,B1016,1/21/2026 0:30,QA,Chrome,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,5879,0,PASS
+TC_EDIT_EMP_030,B1032,1/21/2026 0:32,QA,Firefox,Employee,Edit Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46515,1,FAIL
+TC_DELETE_EMP_017,B1017,1/21/2026 0:34,QA,Edge,Employee,Delete Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,46496,0,FAIL
+TC_VIEW_PRODUCT_010,B1042,1/21/2026 0:36,Staging,Chrome,Ecommerce,View Product,Assertion passed,N/A,N/A,HTTP 200 OK,3731,0,PASS
+TC_DELETE_EMP_018,B1032,1/21/2026 0:38,QA,Edge,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33029,3,FAIL
+TC_ADD_CART_008,B1038,1/21/2026 0:40,UAT,Chrome,Ecommerce,Add to Cart,Assertion passed,N/A,N/A,HTTP 200 OK,3609,0,PASS
+TC_LOGIN_017,B1040,1/21/2026 0:42,UAT,Chrome,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17176,0,FAIL
+TC_ADD_CART_036,B1049,1/21/2026 0:44,Staging,Chrome,Ecommerce,Add to Cart,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33639,3,FAIL
+TC_LOGIN_027,B1038,1/21/2026 0:46,Staging,Chrome,Authentication,Click Login Button,Assertion passed,N/A,N/A,HTTP 200 OK,3685,0,PASS
+TC_RENT_029,B1030,1/21/2026 0:48,UAT,Chrome,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,7785,0,PASS
+TC_RENT_007,B1024,1/21/2026 0:50,Staging,Chrome,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,31737,1,FAIL
+TC_VIEW_PRODUCT_034,B1040,1/21/2026 0:52,UAT,Chrome,Ecommerce,View Product,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34183,1,FAIL
+TC_LOGIN_005,B1014,1/21/2026 0:54,Staging,Edge,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19750,0,FAIL
+TC_VIEW_EMP_033,B1038,1/21/2026 0:56,UAT,Chrome,Employee,View Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6116,0,PASS
+TC_RENT_032,B1024,1/21/2026 0:58,Staging,Edge,Ecommerce,Rent Item,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,30999,1,FAIL
+TC_DELETE_EMP_017,B1042,1/21/2026 1:00,QA,Edge,Employee,Delete Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33818,3,FAIL
+TC_PURCHASE_002,B1027,1/21/2026 1:02,Staging,Firefox,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,3389,0,PASS
+TC_LOGIN_010,B1021,1/21/2026 1:04,Staging,Firefox,Authentication,Click Login Button,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32320,3,FAIL
+TC_DELETE_EMP_044,B1029,1/21/2026 1:06,Staging,Edge,Employee,Delete Employee,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,17227,1,FAIL
+TC_ADD_EMP_026,B1013,1/21/2026 1:08,Staging,Edge,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,4967,0,PASS
+TC_PURCHASE_028,B1010,1/21/2026 1:10,Staging,Firefox,Ecommerce,Purchase,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,19165,0,FAIL
+TC_RENT_011,B1024,1/21/2026 1:12,UAT,Firefox,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,7849,0,PASS
+TC_EDIT_EMP_030,B1016,1/21/2026 1:14,UAT,Edge,Employee,Edit Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45579,0,FAIL
+TC_EDIT_EMP_026,B1006,1/21/2026 1:16,Staging,Firefox,Employee,Edit Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,34859,1,FAIL
+TC_DELETE_EMP_011,B1039,1/21/2026 1:18,Staging,Edge,Employee,Delete Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,47128,1,FAIL
+TC_ADD_EMP_004,B1048,1/21/2026 1:20,Staging,Chrome,Employee,Save Employee,Assertion passed,N/A,N/A,HTTP 200 OK,6089,0,PASS
+TC_VIEW_EMP_049,B1049,1/21/2026 1:22,Staging,Firefox,Employee,View Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,47793,0,FAIL
+TC_VIEW_PRODUCT_006,B1039,1/21/2026 1:24,UAT,Edge,Ecommerce,View Product,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48637,1,FAIL
+TC_EDIT_EMP_043,B1017,1/21/2026 1:26,QA,Edge,Employee,Edit Employee,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,48171,0,FAIL
+TC_ADD_CART_007,B1015,1/21/2026 1:28,QA,Firefox,Ecommerce,Add to Cart,Error: Navigation timeout 45000ms exceeded,page.goto('/dashboard') timed out,N/A,HTTP 200 OK,45970,0,FAIL
+TC_PURCHASE_017,B1029,1/21/2026 1:30,UAT,Chrome,Ecommerce,Purchase,Assertion passed,N/A,N/A,HTTP 200 OK,7584,0,PASS
+TC_LOGIN_046,B1012,1/21/2026 1:32,Staging,Chrome,Authentication,Click Login Button,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,33598,3,FAIL
+TC_LOGIN_026,B1042,1/21/2026 1:34,UAT,Chrome,Authentication,Click Login Button,Error: locator('#user-name') not found,waiting for selector '#user-name' failed,#user-name,N/A,16056,1,FAIL
+TC_RENT_005,B1035,1/21/2026 1:36,QA,Chrome,Ecommerce,Rent Item,Assertion passed,N/A,N/A,HTTP 200 OK,5841,0,PASS
+TC_EDIT_EMP_050,B1045,1/21/2026 1:38,Staging,Chrome,Employee,Edit Employee,Timeout 30000ms waiting for API response,apiRequest.post('/service') timed out,#saveBtn,HTTP 504 Gateway,32673,2,FAIL

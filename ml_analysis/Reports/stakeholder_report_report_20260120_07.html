@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Test Intelligence Report</title>
+<style>
+body { font-family: Arial; margin:40px; background:#f5f5f5; }
+h1 { color:#003366; }
+h2 { color:#444; }
+.card { background:white; padding:20px; margin:15px 0; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+table { border-collapse: collapse; width:100%; }
+th,td { border:1px solid #ccc; padding:8px; text-align:left;}
+th { background:#003366; color:white;}
+</style>
+</head>
+<body>
+
+<h1>AI Test Intelligence Executive Report</h1>
+
+<div class="card">
+<h2>Test Execution Summary</h2>
+<p><b>Total Tests:</b> 500</p>
+<p><b>Passed:</b> 199</p>
+<p><b>Failed:</b> 301</p>
+<p><b>Pass Rate:</b> 39.80%</p>
+</div>
+
+<div class="card">
+<h2>Failure Cluster Distribution</h2>
+<table>
+<tr><th>Cluster</th><th>Count</th></tr>
+<tr><td>NO_FAILURE</td><td>199</td></tr><tr><td>API_LATENCY_SPIKE</td><td>196</td></tr><tr><td>UI_LOCATOR_FAILURE</td><td>105</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>Risk by Module (Fail Count)</h2>
+<table>
+<tr><th>Module</th><th>Failures</th></tr>
+<tr><td>Employee</td><td>134</td></tr><tr><td>Ecommerce</td><td>129</td></tr><tr><td>Authentication</td><td>38</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>Risk by Environment (Fail Count)</h2>
+<table>
+<tr><th>Environment</th><th>Failures</th></tr>
+<tr><td>QA</td><td>100</td></tr><tr><td>Staging</td><td>97</td></tr><tr><td>UAT</td><td>104</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>Priority Breakdown</h2>
+<table>
+<tr><th>Priority Level</th><th>Tests</th></tr>
+<tr><td>HIGH (Score ≥9)</td><td>196</td></tr>
+<tr><td>MEDIUM (Score 6-8)</td><td>105</td></tr>
+<tr><td>LOW (Score ≤5)</td><td>199</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>Top 10 High Priority Failures</h2>
+<table>
+<tr>
+<th>TestCase</th><th>Module</th><th>Error</th><th>Cluster</th><th>Priority</th>
+</tr>
+
+<tr>
+<td>TC_ADD_EMP_049</td>
+<td>Employee</td>
+<td>Error: Navigation timeout 45000ms exceeded</td>
+<td>API_LATENCY_SPIKE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>TC_DELETE_EMP_019</td>
+<td>Employee</td>
+<td>Timeout 30000ms waiting for API response</td>
+<td>API_LATENCY_SPIKE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>TC_PURCHASE_026</td>
+<td>Ecommerce</td>
+<td>Timeout 30000ms waiting for API response</td>
+<td>API_LATENCY_SPIKE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>TC_RENT_001</td>
+<td>Ecommerce</td>
+<td>Timeout 30000ms waiting for API response</td>
+<td>API_LATENCY_SPIKE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>TC_VIEW_EMP_015</td>
+<td>Employee</td>
+<td>Error: Navigation timeout 45000ms exceeded</td>
+<td>API_LATENCY_SPIKE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>TC_ADD_CART_050</td>
+<td>Ecommerce</td>
+<td>Timeout 30000ms waiting for API response</td>
+<td>API_LATENCY_SPIKE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>TC_RENT_034</td>
+<td>Ecommerce</td>
+<td>Timeout 30000ms waiting for API response</td>
+<td>API_LATENCY_SPIKE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>TC_EDIT_EMP_032</td>
+<td>Employee</td>
+<td>Timeout 30000ms waiting for API response</td>
+<td>API_LATENCY_SPIKE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>TC_LOGIN_011</td>
+<td>Authentication</td>
+<td>Timeout 30000ms waiting for API response</td>
+<td>API_LATENCY_SPIKE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>TC_RENT_044</td>
+<td>Ecommerce</td>
+<td>Error: Navigation timeout 45000ms exceeded</td>
+<td>API_LATENCY_SPIKE</td>
+<td>10</td>
+</tr>
+</table>
+</div>
+
+<p>Generated on: 1/20/2026, 3:07:49 PM</p>
+
+</body>
+</html>

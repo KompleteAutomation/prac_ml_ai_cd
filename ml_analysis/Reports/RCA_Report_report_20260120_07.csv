@@ -1,0 +1,3 @@
+FailureCluster,TotalOccurrences,AffectedModules,AffectedEnvironments,CommonErrorMessage,HighPriorityCount,RiskLevel,RecommendedAction
+API_LATENCY_SPIKE,196,"Employee; Ecommerce; Authentication","Staging; QA; UAT","Timeout 30000ms waiting for API response",196,HIGH,"Investigate backend API performance, add monitoring, optimize response times."
+UI_LOCATOR_FAILURE,105,"Employee; Ecommerce; Authentication","QA; Staging; UAT","Error: locator('#user-name') not found",0,LOW,"Stabilize UI locators, introduce resilient selectors, review UI changes."
